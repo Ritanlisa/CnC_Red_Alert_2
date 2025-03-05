@@ -219,7 +219,7 @@ public:
 
 //	CREATEGAMEINFO::GAMEKIND GameKindCurrent;	//	Kind of game (Red Alert, CS, AM) we are in game setup for.
 	CREATEGAMEINFO GameInfoCurrent;				//	Kind of game (Red Alert, CS, AM, tournament, private) we are in game setup for.
-	bool		bEnableNewAftermathUnits;		//	Used to pass game parameter back to init only.
+	bool		bEnableNewYuriUnits;		//	Used to pass game parameter back to init only.
 
 	DWORD		dwTimeNextWolapiPump;
 	DWORD		dwTimeNextChannelUpdate;

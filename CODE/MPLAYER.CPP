@@ -403,7 +403,7 @@ GameType Select_MPlayer_Game (void)
 						retval = GAME_SKIRMISH;
 						process = false;
 #ifdef FIXIT_VERSION_3
-						bAftermathMultiplayer = Is_Aftermath_Installed();
+						bYuriMultiplayer = Is_Yuri_Installed();
 						//	ajw I'll bet this was needed before also...
 						Session.ScenarioIsOfficial = Session.Scenarios[Session.Options.ScenarioIndex]->Get_Official();
 #endif

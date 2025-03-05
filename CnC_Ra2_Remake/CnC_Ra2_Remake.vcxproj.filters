@@ -1,0 +1,1634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Ra1_Sourced">
+      <UniqueIdentifier>{62a56ff5-27bb-46b4-be7c-9e43d8ff2522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ra1_Sourced">
+      <UniqueIdentifier>{45d17a90-d1b7-4f15-bf5f-86a96d8a36ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Ra1_Sourced\WOLAPI">
+      <UniqueIdentifier>{90dd4118-4a0e-461c-9010-5551d24553ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ra1_Sourced\WOLAPI">
+      <UniqueIdentifier>{2d48c03d-6d81-4a2a-8eae-cd98a35da610}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CODE\_WSPROTO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\ABSTRACT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\AIRCRAFT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\ANIM.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\AUDIO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\B64PIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\B64STRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BAR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BASE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BASE64.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BENCH.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BFIOFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BIGCHECK.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BLOWFISH.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BLOWPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BLWSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BMP8.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BUFF.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BUFFERX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BUILDING.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BULLET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CARGO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CARRY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CCDDE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CCFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CCINI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CCPTR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CDFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CELL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CHECKBOX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CHEKLIST.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\COLRLIST.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\COMBUF.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\COMINIT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\COMPAT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\COMQUEUE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CONFDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CONNECT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CONNMGR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CONQUER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CONTROL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CRATE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CRC.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CRCPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CRCSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CREDITS.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CREW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\CSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DDE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DEBUG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DEFINES.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DESCDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DIAL8.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DIBAPI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DIBUTIL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DISPLAY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DOOR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DPMI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DRIVE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DROP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\EDIT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\EGOS.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\ENDING.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\EVENT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\EXTERNS.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FACE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FACING.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FACTORY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FAKESOCK.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FIELD.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FILEPCX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FIXED.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FLASHER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FLY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FOOT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FTIMER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FUNCTION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\FUSE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\GADGET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\GAMEDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\GAUGE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\GOPTIONS.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\GSCREEN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\HEAP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\HELP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\HOUSE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\HSV.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\ICONLIST.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INFANTRY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INLINE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INTERNET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\INTRO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPX95.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPXADDR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPXCONN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPXGCONN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\IPXMGR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\JSHELL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\KEY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\KEYBOARD.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LANGUAGE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LAYER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LCW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LCWPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LCWSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LED.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LINK.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LINT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LIST.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LISTNODE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LOADDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LOGIC.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZO_CONF.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZO1X.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZOCONF.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZOPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZOSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZWPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\LZWSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MAP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MAPEDIT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MCI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MCIMOVIE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MEMCHECK.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MESSAGE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MISSION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MIXFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MONOC.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MOUSE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MOVIE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MPGSET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MPMGRD.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MPMGRW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MPU.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MSGBOX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\MSGLIST.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\NOSEQCON.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\NULLCONN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\NULLMGR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\OBJECT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\OPTIONS.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\OVERLAY.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\PACKET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\PIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\PK.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\PKPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\PKSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\POWER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\QUEUE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RADAR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RADIO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RAMFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RANDOM.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RAWFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RAWOLAPI.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\READLINE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RECT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\REGION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RGB.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RNDSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RNG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\ROTBMP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\RULES.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SAVEDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SCENARIO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SCORE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SCREEN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SCROLL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SEARCH.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SEDITDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SEQCONN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SESSION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SHA.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SHAPEBTN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SHAPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SHASTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SIDEBAR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SLIDER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SMUDGE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SOUNDDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SPECIAL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\STAGE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\STATBTN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\STRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\STYLE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SUPER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\SURFACE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TAB.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TACTION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TARCOM.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TARGET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TCPIP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TEAM.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TEAMTYPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TECHNO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TEMPLATE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TENMGR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TERRAIN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TEVENT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TEXTBTN.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\THEME.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TOGGLE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TOOLTIP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TRIGGER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TRIGTYPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TURRET.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TXTLABEL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\TYPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\UNIT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\UTRACKER.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\VECTOR.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\VERSION.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\VESSEL.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\VISUDLG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\VORTEX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\W95TRACE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WARHEAD.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WATCOM.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WEAPON.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOL_GSUP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPIOB.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLDEBUG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLEDIT.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLSTRNG.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WSPIPX.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WSPROTO.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WSPUDP.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WWALLOC.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WWFILE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\XPIPE.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\XSTRAW.H">
+      <Filter>头文件\Ra1_Sourced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPI\CHATDEFS.H">
+      <Filter>头文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPI\DOWNLOADDEFS.H">
+      <Filter>头文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPI\FTPDEFS.H">
+      <Filter>头文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPI\NETUTILDEFS.H">
+      <Filter>头文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CODE\WOLAPI\WOLAPI.H">
+      <Filter>头文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\CODE\2KEYFBUF.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\2SUPPORT.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\2TXTPRNT.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\COORDA.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\CPUID.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\IPXPROT.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\IPXREAL.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\KEYFBUFF.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\LCWCOMP.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\SUPPORT.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\TXTPRNT.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+    <None Include="..\CODE\WINASM.ASM">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CODE\_WSPROTO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\2KEYFRAM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\AADATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ABSTRACT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ADATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ADPCM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\AIRCRAFT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ALLOC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ANIM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\AUDIO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\B64PIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\B64STRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BAR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BASE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BASE64.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BBDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BENCH.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BFIOFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BIGCHECK.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BLOWFISH.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BLOWPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BLWSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BMP8.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BUFF.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BUILDING.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BULLET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CARGO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CARRY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCDDE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCINI.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCMPATH.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCPTR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CCTEN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CDFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CELL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CHECKBOX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CHEKLIST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CLASS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COLRLIST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COMBAT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COMBUF.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COMINIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COMQUEUE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CONFDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CONNECT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CONQUER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CONST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CONTROL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\COORD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CRATE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CRC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CRCPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CRCSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CREDITS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CREW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\CWSTUB.C">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DDE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DEBUG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DESCDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DIAL8.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DIALOG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DIBFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DIBUTIL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DISPLAY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DOOR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DPMI.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DRIVE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DROP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DTABLE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DYNAVEC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\EDIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\EGOS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ENDING.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\EVENT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\EXPAND.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FACE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FACING.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FACTORY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FIELD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FINDPATH.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FIXED.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FLASHER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FLY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FOOT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\FUSE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GADGET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GAMEDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GAUGE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GETCPU.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GLOBALS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GOPTIONS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\GSCREEN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\HDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\HEAP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\HELP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\HOUSE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\HSV.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ICONLIST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INFANTRY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INI.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INIBIN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INICODE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INTERNET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INTERPAL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\INTRO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IOMAP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IOOBJ.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPX95.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPXADDR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPXCONN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPXGCONN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\IPXMGR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ITABLE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\JSHELL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\KEY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\KEYBOARD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\KEYFRAME.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LAYER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LCW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LCWPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LCWSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LCWUNCMP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LINK.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LIST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LOADDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LOGIC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZO1X_C.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZO1X_D.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZOPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZOSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZWOTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZWPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\LZWSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPEDDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPEDIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPEDPLC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPEDSEL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPEDTM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MAPSEL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MCI.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MCIMOVIE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MENUS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MISSION.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MIXFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MONOC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MOUSE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPGSET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPLAYER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPLIB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPLPC.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPMGRD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPMGRW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MPU.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MSGBOX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\MSGLIST.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NETDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NOSEQCON.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NULLCONN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NULLDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NULLMGR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\NUMBER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\OBJECT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ODATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\OPTIONS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\OVERLAY.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PACKET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PK.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PKPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PKSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\POWER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\PROFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\QUEUE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RADAR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RADIO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RAMFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RAND.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RANDOM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RAWFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RAWOLAPI.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\READLINE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RECT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\REINF.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RGB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RNDSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\ROTBMP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\RULES.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SAVELOAD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SCENARIO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SCORE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SCROLL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SEDITDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SENDFILE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SEQCONN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SESSION.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SHA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SHAPEBTN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SHAPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SHASTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SIDEBAR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SLIDER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SMUDGE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SOUNDDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SPECIAL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SPRITE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\STARTUP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\STATBTN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\STATS.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\STRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\STUB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SUPER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\SURFACE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TAB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TACTION.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TARCOM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TARGET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TCPIP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEAM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEAMTYPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TECHNO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEMP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEMPLATE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TENMGR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TERRAIN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEVENT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEXTBTN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\THEME.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TOGGLE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TOOLTIP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TRACKER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TRIGGER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TRIGTYPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TURRET.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TXTLABEL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\UDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\UDPADDR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\UNIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\UTRACKER.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VDATA.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VECTOR.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VERSION.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VESSEL.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VISUDLG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\VORTEX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\W95TRACE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WARHEAD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WEAPON.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WINSTUB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_CGAM.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_CHAT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_DNLD.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_GSUP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_LOGN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_MAIN.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOL_OPT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOLAPIOB.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOLEDIT.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOLSTRNG.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WRITEPCX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WSPIPX.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WSPROTO.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WSPUDP.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\XPIPE.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\XSTRAW.CPP">
+      <Filter>源文件\Ra1_Sourced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CODE\WOLAPI\WOLAPI_I.C">
+      <Filter>源文件\Ra1_Sourced\WOLAPI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

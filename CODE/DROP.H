@@ -40,6 +40,7 @@
 
 #include	"list.h"
 #include	"edit.h"
+#include	"FUNCTION.H"
 
 class DropListClass : public EditClass {
 	public:

@@ -1185,9 +1185,9 @@ void SessionClass::Write_MultiPlayer_Settings (void)
 }
 
 
-// Determine if a mission is from counterstrike or aftermath, or either.
+// Determine if a mission is from counterstrike or yuri, or either.
 // Multiplayer maps >24, with a numerical name, are Counterstrike.
-// Multiplayer maps with an alphabetical name, like SCMJGEA.INI, are Aftermath.
+// Multiplayer maps with an alphabetical name, like SCMJGEA.INI, are Yuri.
 
 bool Is_Mission_Counterstrike (char *file_name)
 {
@@ -1207,7 +1207,7 @@ bool Is_Mission_Counterstrike (char *file_name)
 }
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-bool Is_Mission_Aftermath (char *file_name)
+bool Is_Mission_Yuri (char *file_name)
 {
 	//	ajw added
 	//	Must start with "scm".
@@ -1229,7 +1229,7 @@ bool Is_Mission_Aftermath (char *file_name)
 
 /*
 ** Certain missions are 126x126 size, and those can't be downloaded to a
-** non-Aftermath player, so this function checks to see if the map in
+** non-Yuri player, so this function checks to see if the map in
 ** question is one of those.  We'll know that by the file name: if it's
 ** K0 -> M9, it's 126x126.
 */
@@ -1294,7 +1294,7 @@ void SessionClass::Read_Scenario_Descriptions (void)
 #ifdef FIXIT_CSII	//	checked - ajw
 			bool official = Is_Mission_126x126( (char *)fname);
 			if (!official) {
-				official = !Is_Mission_Aftermath((char *)fname);
+				official = !Is_Mission_Yuri((char *)fname);
 			}
 
 			Scenarios.Add(new MultiMission(fname, buffer, NULL, official,
@@ -1347,7 +1347,7 @@ void SessionClass::Read_Scenario_Descriptions (void)
 #ifdef FIXIT_CSII	//	checked - ajw
 				bool official = Is_Mission_126x126( (char *)fname);
 				if (!official) {
-					official = !Is_Mission_Aftermath((char *)fname);
+					official = !Is_Mission_Yuri((char *)fname);
 				}
 				Scenarios.Add(new MultiMission(fname, buffer, NULL, official,
 									Is_Mission_Counterstrike ((char*)fname)));
@@ -1392,7 +1392,7 @@ void SessionClass::Read_Scenario_Descriptions (void)
 #else
 				bool official = Is_Mission_126x126( (char *)fname);
 				if (!official) {
-					official = !Is_Mission_Aftermath((char *)fname);
+					official = !Is_Mission_Yuri((char *)fname);
 				}
 				Scenarios.Add(new MultiMission(fname, buffer, NULL, official,
 										Is_Mission_Counterstrike ((char*)fname)));
@@ -1412,8 +1412,8 @@ void SessionClass::Read_Scenario_Descriptions (void)
 #endif
   #endif
 
-#ifdef FIXIT_VERSION_3		//	Aftermath scenarios are now in their own pkt file.
-	if( Is_Aftermath_Installed() )
+#ifdef FIXIT_VERSION_3		//	Yuri scenarios are now in their own pkt file.
+	if( Is_Yuri_Installed() )
 	{
 		CCFileClass file2("AFTMATH.PKT");
 		if (file2.Is_Available()) {
@@ -1479,7 +1479,7 @@ void SessionClass::Read_Scenario_Descriptions (void)
 #ifdef FIXIT_CSII
 				bool official = Is_Mission_126x126( (char *)fname);
 				if (!official) {
-					official = !Is_Mission_Aftermath((char *)fname);
+					official = !Is_Mission_Yuri((char *)fname);
 				}
 				Scenarios.Add(new MultiMission(fname, buffer, NULL, official,
 										Is_Mission_Counterstrike ((char*)fname)));
@@ -1530,7 +1530,7 @@ void SessionClass::Read_Scenario_Descriptions (void)
 				ini.Get_String("Missions", fname, "", buffer, sizeof(buffer));
 				bool official = Is_Mission_126x126( (char *)fname);
 				if (!official) {
-					official = !Is_Mission_Aftermath((char *)fname);
+					official = !Is_Mission_Yuri((char *)fname);
 				}
 
 				Scenarios.Add(new MultiMission(fname, buffer, NULL, official,

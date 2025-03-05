@@ -484,7 +484,7 @@ int Fetch_Difficulty(void)
 	strncpy(buffer, Text_String(TXT_DIFFICULTY), sizeof(buffer)-1);
 	buffer[sizeof(buffer)-1] = '\0';
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-// If it's an aftermath mission, trim the sentence to get rid of the campaign stuff.
+// If it's an yuri mission, trim the sentence to get rid of the campaign stuff.
 	if (amath) {
 		int index=0;
 		while (buffer[index] && buffer[index]!='.') index++;

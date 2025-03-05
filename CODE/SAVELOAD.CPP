@@ -107,7 +107,7 @@ extern bool SpawnedFromWChat;
 static int Reconcile_Players(void);
 extern bool Is_Mission_Counterstrike (char *file_name);
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-extern bool Is_Mission_Aftermath (char *file_name);
+extern bool Is_Mission_Yuri (char *file_name);
 #endif
 
 /***********************************************************************************************
@@ -611,7 +611,7 @@ bool Load_Game(int id)
 #endif
 			}
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-			if (Is_Mission_Aftermath (Scen.ScenarioName)) {
+			if (Is_Mission_Yuri (Scen.ScenarioName)) {
 				cd = 3;
 #ifdef BOGUSCD
 	cd = -1;
@@ -894,15 +894,15 @@ bool Load_Game(int id)
 	Rule.Objects(RuleINI);
 	Rule.Difficulty(RuleINI);
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98 - But does this incorporate *changes*? - NO.
-	Rule.General(AftermathINI);
-	Rule.Recharge(AftermathINI);
-	Rule.AI(AftermathINI);
-	Rule.Powerups(AftermathINI);
-	Rule.Land_Types(AftermathINI);
-	Rule.Themes(AftermathINI);
-	Rule.IQ(AftermathINI);
-	Rule.Objects(AftermathINI);
-	Rule.Difficulty(AftermathINI);
+	Rule.General(YuriINI);
+	Rule.Recharge(YuriINI);
+	Rule.AI(YuriINI);
+	Rule.Powerups(YuriINI);
+	Rule.Land_Types(YuriINI);
+	Rule.Themes(YuriINI);
+	Rule.IQ(YuriINI);
+	Rule.Objects(YuriINI);
+	Rule.Difficulty(YuriINI);
 #endif
 
 	/*
@@ -918,7 +918,7 @@ bool Load_Game(int id)
 	Rule.IQ(ini);
 	Rule.Objects(ini);
 	Rule.Difficulty(ini);
-#ifdef FIXIT_CSII	//	ajw - Added runtime check for Aftermath to skirmish mode.
+#ifdef FIXIT_CSII	//	ajw - Added runtime check for Yuri to skirmish mode.
 	if (load_net) {
 		bool readini = false;
 		switch(Session.Type) {
@@ -926,11 +926,11 @@ bool Load_Game(int id)
 				readini = false;
 				break;
 			case GAME_SKIRMISH:
-				readini = Is_Aftermath_Installed();
+				readini = Is_Yuri_Installed();
 				break;
 			default:
 #ifdef FIXIT_VERSION_3
-				readini = bAftermathMultiplayer;
+				readini = bYuriMultiplayer;
 #else
 				if (PlayingAgainstVersion >= VERSION_AFTERMATH_CS) {
 					readini = true;
@@ -940,11 +940,11 @@ bool Load_Game(int id)
 		}
 		if(readini) {
 			/*
-			** Find out if the CD in the current drive is the Aftermath disc.
+			** Find out if the CD in the current drive is the Yuri disc.
 		  	*/
 			if(Get_CD_Index(CCFileClass::Get_CD_Drive(), 1*60) != 3) {
 				GamePalette.Set(FADE_PALETTE_FAST, Call_Back);
-				if (!Force_CD_Available(3)) {	// force Aftermath CD in drive.
+				if (!Force_CD_Available(3)) {	// force Yuri CD in drive.
    	   		//Prog_End();
 #ifndef FIXIT_VERSION_3			//	WChat eliminated.
 #ifdef WIN32

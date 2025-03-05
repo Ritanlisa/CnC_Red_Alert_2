@@ -37,7 +37,7 @@
 
 #ifndef FUNCTION_H
 #define FUNCTION_H
-
+#define WIN32
 /*
 **	!!!DEFINE!!!  "NDEBUG" if the assertion code is to be !!!REMOVED!!! from the project.
 */
@@ -49,74 +49,74 @@
 Map (screen) class heirarchy.
 
  MapeditClass (most derived class) -- scenario editor
-        ³
+        Â³
    MouseClass -- handles mouse animation and display control
-        ³
+        Â³
   ScrollClass -- map scroll handler
-        ³
+        Â³
     HelpClass -- pop-up help text handler
-        ³
+        Â³
      TabClass -- file folder tab screen mode control dispatcher
-        ³
+        Â³
  SidebarClass -- displays and controls construction list sidebar
-        ³
+        Â³
    PowerClass -- display power production/consumption bargraph
-        ³
+        Â³
    RadarClass -- displays and controls radar map
-        ³
+        Â³
  DisplayClass -- general tactical map display handler
-        ³
+        Â³
      MapClass -- general tactical map data handler
-        ³
+        Â³
  GScreenClass (pure virtual base class) -- generic screen control
 
                           AbstractClass
-                                  ³
-                                  ³
-                                  ³
-                                  ³
+                                  Â³
+                                  Â³
+                                  Â³
+                                  Â³
                             ObjectClass
-                                  ³
-       ÚÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ¿
-   AnimClass  ³  TemplateClass    ³        ÃÄ FuseClass     ³    TerrainClass
-              ³                   ³        ÃÄ FlyClass      ³
-              ³                   ³  BulletClass            ³
+                                  Â³
+       ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã…Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿
+   AnimClass  Â³  TemplateClass    Â³        ÃƒÃ„ FuseClass     Â³    TerrainClass
+              Â³                   Â³        ÃƒÃ„ FlyClass      Â³
+              Â³                   Â³  BulletClass            Â³
        OverlayClass        MissionClass               SmudgeClass
-                                  ³
+                                  Â³
                              RadioClass
-                                  ³
-                                  ÃÄ CrewClass
-                                  ÃÄ FlasherClass
-                                  ÃÄ StageClass
-                                  ÃÄ CargoClass
+                                  Â³
+                                  ÃƒÃ„ CrewClass
+                                  ÃƒÃ„ FlasherClass
+                                  ÃƒÃ„ StageClass
+                                  ÃƒÃ„ CargoClass
                             TechnoClass
-                                  ³
-                       ÚÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                                  Â³
+                       ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„ÃÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿
                    FootClass                           BuildingClass
-                       ³
-         ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÁÂÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-    DriveClass  InfantryClass         ÃÄ FlyClass
-         ³                      AircraftClass
-       ÚÄÁÄÄÄÄÄÄÄÄÄ¿
-       ³           ³
-       ³     VesselClass
-       ³
+                       Â³
+         ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„ÃÃ‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿
+    DriveClass  InfantryClass         ÃƒÃ„ FlyClass
+         Â³                      AircraftClass
+       ÃšÃ„ÃÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿
+       Â³           Â³
+       Â³     VesselClass
+       Â³
     UnitClass
 
 
                             AbstractTypeClass
-                                    ³
+                                    Â³
                               ObjectTypeClass
-                                    ³
-             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-             ³                      ³            ³                 ³
-       TechnoTypeClass              ³            ³                 ³
-             ³                BulletTypeClass    ³                 ³
-             ³                           TemplateTypeClass         ³
-    ÚÄÄÄÄÄÄÄÄÁÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄ¿    TerrainTypeClass
-    ³              ³           ³              ³        ³
-UnitTypeClass      ³   BuildingTypeClass      ³  VesselTypeClass
-                   ³                          ³
+                                    Â³
+             ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã…Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿
+             Â³                      Â³            Â³                 Â³
+       TechnoTypeClass              Â³            Â³                 Â³
+             Â³                BulletTypeClass    Â³                 Â³
+             Â³                           TemplateTypeClass         Â³
+    ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„ÃÃ„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã‚Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿    TerrainTypeClass
+    Â³              Â³           Â³              Â³        Â³
+UnitTypeClass      Â³   BuildingTypeClass      Â³  VesselTypeClass
+                   Â³                          Â³
            AircraftTypeClass          InfantryTypeClass
 #endif
 
@@ -251,7 +251,7 @@ typedef struct {
 #include	<stdlib.h>
 #include	<stdio.h>
 #include	<stddef.h>
-#include	<mem.h>
+//#include	<mem.h>
 #include	<dos.h>
 #include	<direct.h>
 #include	<stdarg.h>
@@ -293,8 +293,8 @@ extern long LParam;
 /*
 **	Greenleaf specific includes.
 */
-#include <modem.h>
-#include <fast.h>
+//#include <modem.h>
+//#include <fast.h>
 
 
 extern long Frame;
@@ -389,7 +389,7 @@ CELL Coord_Cell(COORDINATE coord);
 #include	"scenario.h"
 #include "msglist.h"			// Multiplayer chat message system
 #include "session.h"			// Multiplayer session class
-#include "phone.h"			// Phone list manager
+//#include "phone.h"			// Phone list manager
 #include "ipxmgr.h"			// IPX connection manager
 #include	"nullmgr.h"			// Modem connection manager
 #include	"readline.h"
@@ -509,7 +509,7 @@ Rect const Shape_Dimensions(void const * shapedata, int shapenum);
 void IPX_Call_Back(void);
 bool Is_Counterstrike_Installed (void);
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-bool Is_Aftermath_Installed (void);
+bool Is_Yuri_Installed (void);
 #endif
 
 

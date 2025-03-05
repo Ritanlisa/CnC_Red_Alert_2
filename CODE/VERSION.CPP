@@ -830,7 +830,7 @@ char const * Version_Name(void)
 	if (Is_Counterstrike_Installed ()){
 		strcat (buffer, "CS");
 	}
-	if (Is_Aftermath_Installed()) {
+	if (Is_Yuri_Installed()) {
 		strcat (buffer, "AM");
 	}
 

@@ -2251,7 +2251,7 @@ static void Init_Bootstrap_Mixfiles(void)
 	int temp = RequiredCD;
 	RequiredCD = -2;
 
-	new MFCD("REDALERT.MIX", &FastKey);
+	new MFCD("RA2.MIX", &FastKey);
 
 	/*
 	**	Bootstrap enough of the system so that the error dialog box can successfully

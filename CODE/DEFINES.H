@@ -89,8 +89,8 @@
 
 #define	FIXIT_ANTS              // Adds Ant Units
 
-#define	FIXIT_CSII					// Adds Aftermath CounterStrike II units
-//	ajw 9/28/98 - Note about FIXIT_CSII. Changes seem to have been made for Aftermath ("Counterstrike II") that: a) were
+#define	FIXIT_CSII					// Adds Yuri CounterStrike II units
+//	ajw 9/28/98 - Note about FIXIT_CSII. Changes seem to have been made for Yuri ("Counterstrike II") that: a) were
 //	bug fixes that should never be rolled back, b) change the nature of the game, at least in multi-player. This meant
 //	that the "Red Alert" executable ( == Counterstrike executable ) could no longer be built. Apparently, at the time,
 //	this was justified, as it was believed that no further patches to the RA executable would ever be necessary.
@@ -98,13 +98,13 @@
 //	We've decided to level the field and make sure every who gets or patches to the new version of Red Alert, CS, AM, (and
 //	their DVD equivalent(s)) will have the same executable. So we're assuming that all of the FIXIT_CSII changes are 
 //	permanent (as, in fact, all prior FIXIT_'s are - makes me wonder why the old non-compiling code has to hang around
-//	forever), and fixing the code so that the assumption "this is an Aftermath game" is no longer hard-coded, but can 
-//	change at runtime. (Which is what should have been done when Aftermath was created.)
+//	forever), and fixing the code so that the assumption "this is an Yuri game" is no longer hard-coded, but can 
+//	change at runtime. (Which is what should have been done when Yuri was created.)
 //	<This goes for the following three defines as well.>
-#define	FIXIT_CARRIER				// Adds Aftermath aircraft carrier
-#define	FIXIT_PHASETRANSPORT		// Adds Aftermath cloaking APC
+#define	FIXIT_CARRIER				// Adds Yuri aircraft carrier
+#define	FIXIT_PHASETRANSPORT		// Adds Yuri cloaking APC
 //	ajw - Discovered that engineer changing fields were specifically left out of aftrmath.ini, thus this has no effect.
-//	Engineer changes (and other game rule changes) are in mplayer.ini, which was loaded before aftermath-only mplayer games.
+//	Engineer changes (and other game rule changes) are in mplayer.ini, which was loaded before yuri-only mplayer games.
 #define	FIXIT_ENGINEER				// Adds Engineer rules.ini overrides
 
 //#define	FIXIT_FAST_LOAD			// Enables faster INI loading
@@ -125,7 +125,7 @@
 #define FIXIT_PHONELIST_CRASH // Fixes crash when clicking on an empty phonelist
 #endif
 
-//	Denotes changes made for version 3 - reunification of all existing versions and undoing of Aftermath divergence. - ajw
+//	Denotes changes made for version 3 - reunification of all existing versions and undoing of Yuri divergence. - ajw
 #define FIXIT_VERSION_3
 #define DVD
 
@@ -477,7 +477,7 @@ typedef enum DiffType {
 */
 #define FAME_FILE_NAME			"HALLFAME.DAT"
 #define NET_SAVE_FILE_NAME		"SAVEGAME.NET"
-#define CONFIG_FILE_NAME		"REDALERT.INI"
+#define CONFIG_FILE_NAME		"RA2.INI"
 
 
 /**********************************************************************

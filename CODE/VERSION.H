@@ -41,10 +41,10 @@
 #define	VERSION_RED_ALERT_107		0x00011000	//Shipped Counterstrike number
 #define	VERSION_RED_ALERT_106		0x00010500	//Patch without CS installed
 #define	VERSION_RED_ALERT_108		0x00011500	//Patch with CS installed
-#define	VERSION_AFTERMATH_CS			0x00011FFF	//Aftermath with CS installed
-#define	VERSION_AFTERMATH				0x00012000	//Aftermath
+#define	VERSION_AFTERMATH_CS			0x00011FFF	//Yuri with CS installed
+#define	VERSION_AFTERMATH				0x00012000	//Yuri
 
-//	Aftermath has, in a sense, used version 2.00. (Because of the text on title screen.) Call ourselves version 3.
+//	Yuri has, in a sense, used version 2.00. (Because of the text on title screen.) Call ourselves version 3.
 #define VERSION_RA_300				0x00030000	//	RA, CS, AM executables unified into one. All are now the same version. -ajw
 //	It seems that extra information, that didn't belong there, was being stuffed into version number. Namely, whether or not
 //	Counterstrike is installed. I'm going to change things back to the way they should be, as I see it. Version will describe
@@ -53,8 +53,8 @@
 
 //	However, having said that, a caveat. I'm going to have to use the same communication method that was used previously, because
 //	I need to have prior versions of the game recognize that they can't play against this version. What I'll do is encode
-//	"does player have aftermath" (which is actually the only fact that matters, in multiplayer) in the communicated version
-//	number, as a high bit set/unset. This version of the game will receive this communicated value and pull out the Aftermath
+//	"does player have yuri" (which is actually the only fact that matters, in multiplayer) in the communicated version
+//	number, as a high bit set/unset. This version of the game will receive this communicated value and pull out the Yuri
 //	bit. Older version will reject us as a possible opponent, because, whether or not AM is installed, our version number will
 //	be too high for them.
 

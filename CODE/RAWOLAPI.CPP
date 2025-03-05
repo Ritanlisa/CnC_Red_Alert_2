@@ -171,7 +171,7 @@ STDMETHODIMP RAChatEventSink::OnServerList( HRESULT hRes, Server* pServerHead )
 			}
 			else if( !*pOwner->szGameResServerHost2 && ( strcmp( (char*)pServerHead->connlabel, "GAM" ) == 0 ) )
 			{
-				//	This is the Aftermath game results port.
+				//	This is the Yuri game results port.
 				char* token;
 				token = strtok( (char*)pServerHead->conndata, ";" );
 				token = strtok( NULL, ";" );
@@ -1807,7 +1807,7 @@ STDMETHODIMP RANetUtilEventSink::OnLadderList( HRESULT hRes, Ladder* pLadderList
 					}
 					if( _stricmp( (char*)pLadderNew->login_name, pOwner->szMyName ) == 0 )
 					{
-						//	Set up local player's win/loss string for Aftermath.
+						//	Set up local player's win/loss string for Yuri.
 						sprintf( pOwner->szMyRecordAM, TXT_WOL_PERSONALWINLOSSRECORDAM, pOwner->szMyName, 
 									pLadderNew->rung, pLadderNew->wins, pLadderNew->losses, pLadderNew->points );
 						pOwner->bMyRecordUpdated = true;

@@ -1,0 +1,7 @@
+.vscode/
+CnC_Ra2_Remake/.vs/
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.log

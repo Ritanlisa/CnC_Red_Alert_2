@@ -111,7 +111,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <ddraw.h>
-
+#include <stdlib.h>
 
 #ifndef GBUFFER_H
 #define GBUFFER_H
@@ -369,7 +369,7 @@ class GraphicBufferClass : public GraphicViewPortClass, public BufferClass {
 		void DD_Init(GBC_Enum flags);
 		void Init(int w, int h, void *buffer, long size, GBC_Enum flags);
 		void Un_Init(void);
-		void GraphicBufferClass::Attach_DD_Surface (GraphicBufferClass * attach_buffer);
+		void Attach_DD_Surface (GraphicBufferClass * attach_buffer);
 		BOOL Lock(void);
 		BOOL Unlock(void);
 

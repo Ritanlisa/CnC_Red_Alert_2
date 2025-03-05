@@ -1492,7 +1492,7 @@ bool ProcessChannelListSelection( WolapiObject* pWO, IconListClass& chatlist, Ic
 					}
 					break;
 				case CREATEGAMEINFO::AMGAME:
-					if( !Is_Aftermath_Installed() )
+					if( !Is_Yuri_Installed() )
 					{
 						WOL_PrintMessage( chatlist, TXT_WOL_NEEDAFTERMATH, WOLCOLORREMAP_LOCALMACHINEMESS );
 						Sound_Effect( WOLSOUND_ERROR );

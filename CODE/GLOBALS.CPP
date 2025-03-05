@@ -236,7 +236,7 @@ char const * TutorialText[225];
 */
 CCINIClass RuleINI;
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-CCINIClass AftermathINI;
+CCINIClass YuriINI;
 #endif
 
 /***************************************************************************
@@ -616,7 +616,7 @@ int NewMaxAheadFrame2;
 #endif
 
 #ifdef FIXIT_VERSION_3
-bool	bAftermathMultiplayer;		//	Is multiplayer game being played with Aftermath rules?
+bool	bYuriMultiplayer;		//	Is multiplayer game being played with Yuri rules?
 #else
 unsigned long 	PlayingAgainstVersion;		// Negotiated version number
 bool				Version107InMix;				// Is there a v1.07 in the game

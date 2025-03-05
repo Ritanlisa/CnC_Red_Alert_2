@@ -65,7 +65,7 @@ int Read_Game_Options(void);
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 extern bool Is_Mission_126x126 (char *file_name);
-extern bool Is_Mission_Aftermath (char *file_name);
+extern bool Is_Mission_Yuri (char *file_name);
 extern bool Is_Mission_Counterstrike (char *file_name);
 #endif
 
@@ -345,7 +345,7 @@ int Read_Game_Options(char *name)
 			//WWDebugString ("RA95I - Session.Options.ScenarioIndex == -1\n");
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 			if( (Expansion_CS_Present() && Is_Mission_Counterstrike(Session.ScenarioFileName)) ||
-			    (Expansion_AM_Present() && Is_Mission_Aftermath(Session.ScenarioFileName)) ) {
+			    (Expansion_AM_Present() && Is_Mission_Yuri(Session.ScenarioFileName)) ) {
 #else
 			if ( Expansion_CS_Present() ) {
 #endif
@@ -360,7 +360,7 @@ int Read_Game_Options(char *name)
 						needcd = true;
 					}
 				}
-				if (Is_Mission_Aftermath(Session.ScenarioFileName)) {
+				if (Is_Mission_Yuri(Session.ScenarioFileName)) {
 					if (index != 3) {
 						RequiredCD = 3;
 						needcd = true;

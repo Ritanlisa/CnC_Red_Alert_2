@@ -62,7 +62,7 @@ ModemRegistryEntryClass *ModemRegistry = NULL;		//Ptr to modem registry data
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 extern bool Is_Mission_126x126 (char *file_name);
 extern bool Is_Mission_Counterstrike (char *file_name);
-extern bool Is_Mission_Aftermath( char* file_name );
+extern bool Is_Mission_Yuri( char* file_name );
 #endif
 
 //#include "WolDebug.h"
@@ -112,7 +112,7 @@ static SerialSettingsType *DialSettings;
 
 #ifdef FIXIT_VERSION_3
 bool Force_Scenario_Available( const char* szName );
-bool bSpecialAftermathScenario( const char* szScenarioDescription );
+bool bSpecialYuriScenario( const char* szScenarioDescription );
 #endif
 
 #define PCOLOR_BROWN	PCOLOR_GREY
@@ -1575,35 +1575,35 @@ Advanced_Modem_Settings (SerialSettingsType *settings)
 /***************************************************************************
  * Com_Settings_Dialog -- Lets user select serial port settings            *
  *                                                                         *
- *  здддддддддддддддддддддддддддддддддддддддддддддддддддддд©               *
- *  Ё                    Settings                          Ё               *
- *  Ё                                                      Ё               *
- *  Ё     Port:____       IRQ:__        Baud:______        Ё               *
- *  Ё  здддддддддддд©  здддддддддддд©  здддддддддддд©      Ё               *
- *  Ё  Ё            Ё  Ё            Ё  Ё            Ё      Ё               *
- *  Ё  Ё            Ё  Ё            Ё  Ё            Ё      Ё               *
- *  Ё  Ё            Ё  Ё            Ё  Ё            Ё      Ё               *
- *  Ё  Ё            Ё  Ё            Ё  Ё            Ё      Ё               *
- *  Ё  юдддддддддддды  юдддддддддддды  юдддддддддддды      Ё               *
- *  Ё                                                      Ё               *
- *  Ё   Initialization:        [Add]   [Delete]            Ё               *
- *  Ё    _____________________________                     Ё               *
- *  Ё   здддддддддддддддддддддддддддддддддддддддддддд©     Ё               *
- *  Ё   Ё                                            Ё     Ё               *
- *  Ё   Ё                                            Ё     Ё               *
- *  Ё   Ё                                            Ё     Ё               *
- *  Ё   юдддддддддддддддддддддддддддддддддддддддддддды     Ё               *
- *  Ё                                                      Ё               *
- *  Ё   Call Waiting:                                      Ё               *
- *  Ё    _______________                                   Ё               *
- *  Ё   зддддддддддддддддд©          [Tone Dialing]        Ё               *
- *  Ё   Ё                 Ё                                Ё               *
- *  Ё   Ё                 Ё          [Pulse Dialing]       Ё               *
- *  Ё   Ё                 Ё                                Ё               *
- *  Ё   юддддддддддддддддды                                Ё               *
- *  Ё                                                      Ё               *
- *  Ё                   [OK]   [Cancel]                    Ё               *
- *  юдддддддддддддддддддддддддддддддддддддддддддддддддддддды               *
+ *  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©               *
+ *  О©╫                    Settings                          О©╫               *
+ *  О©╫                                                      О©╫               *
+ *  О©╫     Port:____       IRQ:__        Baud:______        О©╫               *
+ *  О©╫  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©      О©╫               *
+ *  О©╫  О©╫            О©╫  О©╫            О©╫  О©╫            О©╫      О©╫               *
+ *  О©╫  О©╫            О©╫  О©╫            О©╫  О©╫            О©╫      О©╫               *
+ *  О©╫  О©╫            О©╫  О©╫            О©╫  О©╫            О©╫      О©╫               *
+ *  О©╫  О©╫            О©╫  О©╫            О©╫  О©╫            О©╫      О©╫               *
+ *  О©╫  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫      О©╫               *
+ *  О©╫                                                      О©╫               *
+ *  О©╫   Initialization:        [Add]   [Delete]            О©╫               *
+ *  О©╫    _____________________________                     О©╫               *
+ *  О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©     О©╫               *
+ *  О©╫   О©╫                                            О©╫     О©╫               *
+ *  О©╫   О©╫                                            О©╫     О©╫               *
+ *  О©╫   О©╫                                            О©╫     О©╫               *
+ *  О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫     О©╫               *
+ *  О©╫                                                      О©╫               *
+ *  О©╫   Call Waiting:                                      О©╫               *
+ *  О©╫    _______________                                   О©╫               *
+ *  О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©          [Tone Dialing]        О©╫               *
+ *  О©╫   О©╫                 О©╫                                О©╫               *
+ *  О©╫   О©╫                 О©╫          [Pulse Dialing]       О©╫               *
+ *  О©╫   О©╫                 О©╫                                О©╫               *
+ *  О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫                                О©╫               *
+ *  О©╫                                                      О©╫               *
+ *  О©╫                   [OK]   [Cancel]                    О©╫               *
+ *  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫               *
  *                                                                         *
  * INPUT:                                                                  *
  *		settings		ptr to SerialSettingsType structure								*
@@ -3314,10 +3314,10 @@ int Com_Scenario_Dialog(bool skirmish)
 	for (i = 0; i < Session.Scenarios.Count(); i++) {
 		for (int j = 0; EngMisStr[j] != NULL;  j++) {
 			if (!strcmp(Session.Scenarios[i]->Description(), EngMisStr[j])) {
-#ifdef FIXIT_CSII	//	ajw Added Aftermath installed checks (before, it was assumed).
+#ifdef FIXIT_CSII	//	ajw Added Yuri installed checks (before, it was assumed).
 			//	Add mission if it's available to us.
 			if( !( ( Is_Mission_Counterstrike((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Counterstrike_Installed() ) ||
-					( Is_Mission_Aftermath((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Aftermath_Installed() ) ) )
+					( Is_Mission_Yuri((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Yuri_Installed() ) ) )
 #endif
 #if defined(GERMAN) || defined(FRENCH)
 				scenariolist.Add_Item(EngMisStr[j+1]);
@@ -3328,11 +3328,11 @@ int Com_Scenario_Dialog(bool skirmish)
 			}
 		}
 		if (EngMisStr[j] == NULL) {
-#ifdef FIXIT_CSII	//	ajw Added Aftermath installed checks (before, it was assumed). Added officialness check.
+#ifdef FIXIT_CSII	//	ajw Added Yuri installed checks (before, it was assumed). Added officialness check.
 			//	Add mission if it's available to us.
 			if( !Session.Scenarios[i]->Get_Official() ||
 				!( ( Is_Mission_Counterstrike((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Counterstrike_Installed() ) ||
-					( Is_Mission_Aftermath((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Aftermath_Installed() ) ) )
+					( Is_Mission_Yuri((char *)(Session.Scenarios[i]->Get_Filename())) && !Is_Yuri_Installed() ) ) )
 #endif
 			scenariolist.Add_Item(Session.Scenarios[i]->Description());
 		}
@@ -4635,7 +4635,7 @@ oh_dear_its_a_label:
 
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-extern bool Is_Mission_Aftermath (char *file_name);
+extern bool Is_Mission_Yuri (char *file_name);
 #endif
 
 /***********************************************************************************************
@@ -4700,9 +4700,9 @@ bool Find_Local_Scenario (char *description, char *filename, unsigned int length
 //debugprint("digest = %s, digest_buffer = %s.\n", digest, digest_buffer);
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98. But don't know why this happens. Because of autodownload?
 					/*
-					** If this is an aftermath scenario then ignore the digest and return success.
+					** If this is an yuri scenario then ignore the digest and return success.
 					*/
-					if ( Is_Mission_Aftermath ((char*)Session.Scenarios[index]->Get_Filename()) ) {
+					if ( Is_Mission_Yuri ((char*)Session.Scenarios[index]->Get_Filename()) ) {
 //debugprint("a 1match!\n");
 						strcpy (filename, Session.Scenarios[index]->Get_Filename());
 						return (true);
@@ -4745,29 +4745,29 @@ bool Find_Local_Scenario (char *description, char *filename, unsigned int length
  * vector, and Chat vector aren't used at all by this routine.  The Game & Players				  *
  * list boxes are filled in manually in the processing loop.											  *
  *                                                                         						  *
- *    здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©                      	  *
- *    Ё                        Serial Game                         Ё                       	  *
- *    Ё                                                            Ё                      	  *
- *    Ё                   Your Name: __________                    Ё     							  *
- *    Ё                       House: [GDI] [NOD]                   Ё									  *
- *    Ё               Desired Color: [ ][ ][ ][ ]                  Ё 	   						  *
- *    Ё                                                            Ё                    	 	  *
- *    Ё                     Opponent: Name                         Ё                    	 	  *
- *    Ё                     Scenario: Description                  Ё   								  *
- *    Ё                      Credits: xxxx                         Ё   								  *
- *    Ё                        Bases: ON                           Ё                   	 	  *
- *    Ё                       Crates: ON                           Ё                   	 	  *
- *    Ё                     Tiberium: ON                           Ё                   	 	  *
- *    Ё                       Ghosts: ON                           Ё                   	 	  *
- *    Ё                                                            Ё                   	 	  *
- *    Ё                         [Cancel]                           Ё                    	 	  *
- *    Ё                                                            Ё                   	 	  *
- *    Ё   здддддддддддддддддддддддддддддддддддддддддддддддддддд©   Ё                   	 	  *
- *    Ё   Ё                                                    Ё   Ё                   	 	  *
- *    Ё   Ё                                                    Ё   Ё                   	 	  *
- *    Ё   юдддддддддддддддддддддддддддддддддддддддддддддддддддды   Ё                   	 	  *
- *    Ё                       [Send Message]                       Ё                   	 	  *
- *    юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды                      	  *
+ *    О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©                      	  *
+ *    О©╫                        Serial Game                         О©╫                       	  *
+ *    О©╫                                                            О©╫                      	  *
+ *    О©╫                   Your Name: __________                    О©╫     							  *
+ *    О©╫                       House: [GDI] [NOD]                   О©╫									  *
+ *    О©╫               Desired Color: [ ][ ][ ][ ]                  О©╫ 	   						  *
+ *    О©╫                                                            О©╫                    	 	  *
+ *    О©╫                     Opponent: Name                         О©╫                    	 	  *
+ *    О©╫                     Scenario: Description                  О©╫   								  *
+ *    О©╫                      Credits: xxxx                         О©╫   								  *
+ *    О©╫                        Bases: ON                           О©╫                   	 	  *
+ *    О©╫                       Crates: ON                           О©╫                   	 	  *
+ *    О©╫                     Tiberium: ON                           О©╫                   	 	  *
+ *    О©╫                       Ghosts: ON                           О©╫                   	 	  *
+ *    О©╫                                                            О©╫                   	 	  *
+ *    О©╫                         [Cancel]                           О©╫                    	 	  *
+ *    О©╫                                                            О©╫                   	 	  *
+ *    О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©   О©╫                   	 	  *
+ *    О©╫   О©╫                                                    О©╫   О©╫                   	 	  *
+ *    О©╫   О©╫                                                    О©╫   О©╫                   	 	  *
+ *    О©╫   О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫   О©╫                   	 	  *
+ *    О©╫                       [Send Message]                       О©╫                   	 	  *
+ *    О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫                      	  *
  *                                                                         						  *
  * INPUT:                                                                  						  *
  *		none.																												  *
@@ -5917,12 +5917,12 @@ int Com_Show_Scenario_Dialog(void)
 							** sure the local user has the Counterstrike CD in the drive.
 							**
 							*/
-							//	This is duplicated for Aftermath scenarios. ajw
+							//	This is duplicated for Yuri scenarios. ajw
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 							if (Session.ScenarioIsOfficial &&
 								( (Expansion_CS_Present() && Is_Mission_Counterstrike(Session.ScenarioFileName)) ||
-								  (Expansion_AM_Present() && Is_Mission_Aftermath(Session.ScenarioFileName)) ) ) {
+								  (Expansion_AM_Present() && Is_Mission_Yuri(Session.ScenarioFileName)) ) ) {
 #else
 							if ( Expansion_CS_Present() && Session.ScenarioIsOfficial ) {
 #endif
@@ -5940,7 +5940,7 @@ int Com_Show_Scenario_Dialog(void)
 											needcd = true;
 										}
 									}
-									if (Is_Mission_Aftermath(Session.ScenarioFileName)) {
+									if (Is_Mission_Yuri(Session.ScenarioFileName)) {
 										if (index != 3) {
 											RequiredCD = 3;
 											needcd = true;
@@ -6042,7 +6042,7 @@ int Com_Show_Scenario_Dialog(void)
 								} else {
 #endif
 #ifdef FIXIT_VERSION_3
-									if( bSpecialAftermathScenario( Session.Options.ScenarioDescription ) )
+									if( bSpecialYuriScenario( Session.Options.ScenarioDescription ) )
 										break;
 #endif
 									if (!Get_Scenario_File_From_Host(Session.ScenarioFileName, 0)) {
@@ -7587,7 +7587,7 @@ void Hex_Dump_Data( char *buffer, int length )
 			itoh(c, buff);
 
 			if (!(i & 0x3) && i) {
-				Smart_Printf("Ё ");
+				Smart_Printf("О©╫ ");
 			}
 
 			Smart_Printf("%s ", buff);
@@ -7621,7 +7621,7 @@ void Hex_Dump_Data( char *buffer, int length )
 				c = ptr[i];
 				itoh(c, buff);
 				if (!(i & 0x3) && i) {
-					Smart_Printf("Ё ");
+					Smart_Printf("О©╫ ");
 				}
 				Smart_Printf("%s ", buff);
 			} else {

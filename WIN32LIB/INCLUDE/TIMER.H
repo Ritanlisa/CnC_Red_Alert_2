@@ -79,8 +79,6 @@ class TimerClass {
 		long Start(void);				// Resume timer.
 		long Reset(BOOL start=TRUE);	// Reset timer to zero.
 		long Time(void);				// Fetch current timer value.
-
-	protected:
 		long Started;					// Time last started (0 == not paused).
 		long Accumulated;				//	Total accumulated ticks.
 

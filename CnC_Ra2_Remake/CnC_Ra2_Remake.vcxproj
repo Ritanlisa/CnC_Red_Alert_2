@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{535179b7-3092-4ea0-86da-12a29d245c67}</ProjectGuid>
+    <RootNamespace>CnCRa2Remake</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\WIN32LIB\INCLUDE;C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\CODE;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\VQ;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\WIN32LIB\INCLUDE;C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\CODE;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\Ritanlisa\Desktop\CnC_Red_Alert_2\RA2_Resorted\VQ;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);TRUE_FALSE_DEFINED;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);TRUE_FALSE_DEFINED;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CODE\ABSTRACT.H" />
+    <ClInclude Include="..\CODE\AIRCRAFT.H" />
+    <ClInclude Include="..\CODE\ANIM.H" />
+    <ClInclude Include="..\CODE\AUDIO.H" />
+    <ClInclude Include="..\CODE\B64PIPE.H" />
+    <ClInclude Include="..\CODE\B64STRAW.H" />
+    <ClInclude Include="..\CODE\BAR.H" />
+    <ClInclude Include="..\CODE\BASE.H" />
+    <ClInclude Include="..\CODE\BASE64.H" />
+    <ClInclude Include="..\CODE\BENCH.H" />
+    <ClInclude Include="..\CODE\BFIOFILE.H" />
+    <ClInclude Include="..\CODE\BIGCHECK.H" />
+    <ClInclude Include="..\CODE\BLOWFISH.H" />
+    <ClInclude Include="..\CODE\BLOWPIPE.H" />
+    <ClInclude Include="..\CODE\BLWSTRAW.H" />
+    <ClInclude Include="..\CODE\BMP8.H">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CODE\BUFF.H" />
+    <ClInclude Include="..\CODE\BUFFERX.H" />
+    <ClInclude Include="..\CODE\BUILDING.H" />
+    <ClInclude Include="..\CODE\BULLET.H" />
+    <ClInclude Include="..\CODE\CARGO.H" />
+    <ClInclude Include="..\CODE\CARRY.H" />
+    <ClInclude Include="..\CODE\CCDDE.H" />
+    <ClInclude Include="..\CODE\CCFILE.H" />
+    <ClInclude Include="..\CODE\CCINI.H" />
+    <ClInclude Include="..\CODE\CCPTR.H" />
+    <ClInclude Include="..\CODE\CDFILE.H" />
+    <ClInclude Include="..\CODE\CELL.H" />
+    <ClInclude Include="..\CODE\CHECKBOX.H" />
+    <ClInclude Include="..\CODE\CHEKLIST.H" />
+    <ClInclude Include="..\CODE\COLRLIST.H" />
+    <ClInclude Include="..\CODE\COMBUF.H" />
+    <ClInclude Include="..\CODE\COMINIT.H" />
+    <ClInclude Include="..\CODE\COMPAT.H" />
+    <ClInclude Include="..\CODE\COMQUEUE.H" />
+    <ClInclude Include="..\CODE\CONFDLG.H" />
+    <ClInclude Include="..\CODE\CONNECT.H" />
+    <ClInclude Include="..\CODE\CONNMGR.H" />
+    <ClInclude Include="..\CODE\CONQUER.H" />
+    <ClInclude Include="..\CODE\CONTROL.H" />
+    <ClInclude Include="..\CODE\CRATE.H" />
+    <ClInclude Include="..\CODE\CRC.H" />
+    <ClInclude Include="..\CODE\CRCPIPE.H" />
+    <ClInclude Include="..\CODE\CRCSTRAW.H" />
+    <ClInclude Include="..\CODE\CREDITS.H" />
+    <ClInclude Include="..\CODE\CREW.H" />
+    <ClInclude Include="..\CODE\CSTRAW.H" />
+    <ClInclude Include="..\CODE\DDE.H">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CODE\DEBUG.H" />
+    <ClInclude Include="..\CODE\DEFINES.H" />
+    <ClInclude Include="..\CODE\DESCDLG.H" />
+    <ClInclude Include="..\CODE\DIAL8.H" />
+    <ClInclude Include="..\CODE\DIBAPI.H" />
+    <ClInclude Include="..\CODE\DIBUTIL.H" />
+    <ClInclude Include="..\CODE\DISPLAY.H" />
+    <ClInclude Include="..\CODE\DOOR.H" />
+    <ClInclude Include="..\CODE\DPMI.H" />
+    <ClInclude Include="..\CODE\DRIVE.H" />
+    <ClInclude Include="..\CODE\DROP.H" />
+    <ClInclude Include="..\CODE\EDIT.H" />
+    <ClInclude Include="..\CODE\EGOS.H" />
+    <ClInclude Include="..\CODE\ENDING.H" />
+    <ClInclude Include="..\CODE\EVENT.H" />
+    <ClInclude Include="..\CODE\EXTERNS.H" />
+    <ClInclude Include="..\CODE\FACE.H" />
+    <ClInclude Include="..\CODE\FACING.H" />
+    <ClInclude Include="..\CODE\FACTORY.H" />
+    <ClInclude Include="..\CODE\FAKESOCK.H" />
+    <ClInclude Include="..\CODE\FIELD.H" />
+    <ClInclude Include="..\CODE\FILEPCX.H" />
+    <ClInclude Include="..\CODE\FIXED.H" />
+    <ClInclude Include="..\CODE\FLASHER.H" />
+    <ClInclude Include="..\CODE\FLY.H" />
+    <ClInclude Include="..\CODE\FOOT.H" />
+    <ClInclude Include="..\CODE\FTIMER.H" />
+    <ClInclude Include="..\CODE\FUNCTION.H" />
+    <ClInclude Include="..\CODE\FUSE.H" />
+    <ClInclude Include="..\CODE\GADGET.H" />
+    <ClInclude Include="..\CODE\GAMEDLG.H" />
+    <ClInclude Include="..\CODE\GAUGE.H" />
+    <ClInclude Include="..\CODE\GOPTIONS.H" />
+    <ClInclude Include="..\CODE\GSCREEN.H" />
+    <ClInclude Include="..\CODE\HEAP.H" />
+    <ClInclude Include="..\CODE\HELP.H" />
+    <ClInclude Include="..\CODE\HOUSE.H" />
+    <ClInclude Include="..\CODE\HSV.H" />
+    <ClInclude Include="..\CODE\ICONLIST.H" />
+    <ClInclude Include="..\CODE\INFANTRY.H" />
+    <ClInclude Include="..\CODE\INI.H" />
+    <ClInclude Include="..\CODE\INLINE.H" />
+    <ClInclude Include="..\CODE\INT.H" />
+    <ClInclude Include="..\CODE\INTERNET.H" />
+    <ClInclude Include="..\CODE\INTRO.H" />
+    <ClInclude Include="..\CODE\IPX.H" />
+    <ClInclude Include="..\CODE\IPX95.H" />
+    <ClInclude Include="..\CODE\IPXADDR.H" />
+    <ClInclude Include="..\CODE\IPXCONN.H" />
+    <ClInclude Include="..\CODE\IPXGCONN.H" />
+    <ClInclude Include="..\CODE\IPXMGR.H" />
+    <ClInclude Include="..\CODE\JSHELL.H" />
+    <ClInclude Include="..\CODE\KEY.H" />
+    <ClInclude Include="..\CODE\KEYBOARD.H" />
+    <ClInclude Include="..\CODE\LANGUAGE.H" />
+    <ClInclude Include="..\CODE\LAYER.H" />
+    <ClInclude Include="..\CODE\LCW.H" />
+    <ClInclude Include="..\CODE\LCWPIPE.H" />
+    <ClInclude Include="..\CODE\LCWSTRAW.H" />
+    <ClInclude Include="..\CODE\LED.H" />
+    <ClInclude Include="..\CODE\LINK.H" />
+    <ClInclude Include="..\CODE\LINT.H" />
+    <ClInclude Include="..\CODE\LIST.H" />
+    <ClInclude Include="..\CODE\LISTNODE.H" />
+    <ClInclude Include="..\CODE\LOADDLG.H" />
+    <ClInclude Include="..\CODE\LOGIC.H" />
+    <ClInclude Include="..\CODE\LZO.H" />
+    <ClInclude Include="..\CODE\LZO1X.H" />
+    <ClInclude Include="..\CODE\LZOCONF.H" />
+    <ClInclude Include="..\CODE\LZOPIPE.H" />
+    <ClInclude Include="..\CODE\LZOSTRAW.H" />
+    <ClInclude Include="..\CODE\LZO_CONF.H" />
+    <ClInclude Include="..\CODE\LZW.H" />
+    <ClInclude Include="..\CODE\LZWPIPE.H" />
+    <ClInclude Include="..\CODE\LZWSTRAW.H" />
+    <ClInclude Include="..\CODE\MAP.H" />
+    <ClInclude Include="..\CODE\MAPEDIT.H" />
+    <ClInclude Include="..\CODE\MCI.H" />
+    <ClInclude Include="..\CODE\MCIMOVIE.H" />
+    <ClInclude Include="..\CODE\MEMCHECK.H" />
+    <ClInclude Include="..\CODE\MESSAGE.H" />
+    <ClInclude Include="..\CODE\MISSION.H" />
+    <ClInclude Include="..\CODE\MIXFILE.H" />
+    <ClInclude Include="..\CODE\MONOC.H" />
+    <ClInclude Include="..\CODE\MOUSE.H" />
+    <ClInclude Include="..\CODE\MOVIE.H" />
+    <ClInclude Include="..\CODE\MP.H" />
+    <ClInclude Include="..\CODE\MPGSET.H" />
+    <ClInclude Include="..\CODE\MPMGRD.H" />
+    <ClInclude Include="..\CODE\MPMGRW.H" />
+    <ClInclude Include="..\CODE\MPU.H" />
+    <ClInclude Include="..\CODE\MSGBOX.H" />
+    <ClInclude Include="..\CODE\MSGLIST.H" />
+    <ClInclude Include="..\CODE\NOSEQCON.H" />
+    <ClInclude Include="..\CODE\NULLCONN.H" />
+    <ClInclude Include="..\CODE\NULLMGR.H" />
+    <ClInclude Include="..\CODE\OBJECT.H" />
+    <ClInclude Include="..\CODE\OPTIONS.H" />
+    <ClInclude Include="..\CODE\OVERLAY.H" />
+    <ClInclude Include="..\CODE\PACKET.H" />
+    <ClInclude Include="..\CODE\PIPE.H" />
+    <ClInclude Include="..\CODE\PK.H" />
+    <ClInclude Include="..\CODE\PKPIPE.H" />
+    <ClInclude Include="..\CODE\PKSTRAW.H" />
+    <ClInclude Include="..\CODE\POWER.H" />
+    <ClInclude Include="..\CODE\QUEUE.H" />
+    <ClInclude Include="..\CODE\RADAR.H" />
+    <ClInclude Include="..\CODE\RADIO.H" />
+    <ClInclude Include="..\CODE\RAMFILE.H" />
+    <ClInclude Include="..\CODE\RANDOM.H" />
+    <ClInclude Include="..\CODE\RAWFILE.H" />
+    <ClInclude Include="..\CODE\RAWOLAPI.H" />
+    <ClInclude Include="..\CODE\READLINE.H" />
+    <ClInclude Include="..\CODE\RECT.H" />
+    <ClInclude Include="..\CODE\REGION.H" />
+    <ClInclude Include="..\CODE\RGB.H" />
+    <ClInclude Include="..\CODE\RNDSTRAW.H" />
+    <ClInclude Include="..\CODE\RNG.H" />
+    <ClInclude Include="..\CODE\ROTBMP.H" />
+    <ClInclude Include="..\CODE\RULES.H" />
+    <ClInclude Include="..\CODE\SAVEDLG.H" />
+    <ClInclude Include="..\CODE\SCENARIO.H" />
+    <ClInclude Include="..\CODE\SCORE.H" />
+    <ClInclude Include="..\CODE\SCREEN.H" />
+    <ClInclude Include="..\CODE\SCROLL.H" />
+    <ClInclude Include="..\CODE\SEARCH.H" />
+    <ClInclude Include="..\CODE\SEDITDLG.H" />
+    <ClInclude Include="..\CODE\SEQCONN.H" />
+    <ClInclude Include="..\CODE\SESSION.H" />
+    <ClInclude Include="..\CODE\SHA.H" />
+    <ClInclude Include="..\CODE\SHAPEBTN.H" />
+    <ClInclude Include="..\CODE\SHAPIPE.H" />
+    <ClInclude Include="..\CODE\SHASTRAW.H" />
+    <ClInclude Include="..\CODE\SIDEBAR.H" />
+    <ClInclude Include="..\CODE\SLIDER.H" />
+    <ClInclude Include="..\CODE\SMUDGE.H" />
+    <ClInclude Include="..\CODE\SOUNDDLG.H" />
+    <ClInclude Include="..\CODE\SPECIAL.H" />
+    <ClInclude Include="..\CODE\STAGE.H" />
+    <ClInclude Include="..\CODE\STATBTN.H" />
+    <ClInclude Include="..\CODE\STRAW.H" />
+    <ClInclude Include="..\CODE\STYLE.H" />
+    <ClInclude Include="..\CODE\SUPER.H" />
+    <ClInclude Include="..\CODE\SURFACE.H" />
+    <ClInclude Include="..\CODE\TAB.H" />
+    <ClInclude Include="..\CODE\TACTION.H" />
+    <ClInclude Include="..\CODE\TARCOM.H" />
+    <ClInclude Include="..\CODE\TARGET.H" />
+    <ClInclude Include="..\CODE\TCPIP.H" />
+    <ClInclude Include="..\CODE\TEAM.H" />
+    <ClInclude Include="..\CODE\TEAMTYPE.H" />
+    <ClInclude Include="..\CODE\TECHNO.H" />
+    <ClInclude Include="..\CODE\TEMPLATE.H" />
+    <ClInclude Include="..\CODE\TENMGR.H" />
+    <ClInclude Include="..\CODE\TERRAIN.H" />
+    <ClInclude Include="..\CODE\TEVENT.H" />
+    <ClInclude Include="..\CODE\TEXTBTN.H" />
+    <ClInclude Include="..\CODE\THEME.H" />
+    <ClInclude Include="..\CODE\TOGGLE.H" />
+    <ClInclude Include="..\CODE\TOOLTIP.H" />
+    <ClInclude Include="..\CODE\TRIGGER.H" />
+    <ClInclude Include="..\CODE\TRIGTYPE.H" />
+    <ClInclude Include="..\CODE\TURRET.H" />
+    <ClInclude Include="..\CODE\TXTLABEL.H" />
+    <ClInclude Include="..\CODE\TYPE.H" />
+    <ClInclude Include="..\CODE\UNIT.H" />
+    <ClInclude Include="..\CODE\UTRACKER.H" />
+    <ClInclude Include="..\CODE\VECTOR.H" />
+    <ClInclude Include="..\CODE\VERSION.H" />
+    <ClInclude Include="..\CODE\VESSEL.H" />
+    <ClInclude Include="..\CODE\VISUDLG.H" />
+    <ClInclude Include="..\CODE\VORTEX.H" />
+    <ClInclude Include="..\CODE\W95TRACE.H" />
+    <ClInclude Include="..\CODE\WARHEAD.H" />
+    <ClInclude Include="..\CODE\WATCOM.H" />
+    <ClInclude Include="..\CODE\WEAPON.H" />
+    <ClInclude Include="..\CODE\WOLAPIOB.H" />
+    <ClInclude Include="..\CODE\WOLAPI\CHATDEFS.H" />
+    <ClInclude Include="..\CODE\WOLAPI\DOWNLOADDEFS.H" />
+    <ClInclude Include="..\CODE\WOLAPI\FTPDEFS.H" />
+    <ClInclude Include="..\CODE\WOLAPI\NETUTILDEFS.H" />
+    <ClInclude Include="..\CODE\WOLAPI\WOLAPI.H" />
+    <ClInclude Include="..\CODE\WOLDEBUG.H" />
+    <ClInclude Include="..\CODE\WOLEDIT.H" />
+    <ClInclude Include="..\CODE\WOLSTRNG.H" />
+    <ClInclude Include="..\CODE\WOL_GSUP.H" />
+    <ClInclude Include="..\CODE\WSPIPX.H" />
+    <ClInclude Include="..\CODE\WSPROTO.H" />
+    <ClInclude Include="..\CODE\WSPUDP.H" />
+    <ClInclude Include="..\CODE\WWALLOC.H" />
+    <ClInclude Include="..\CODE\WWFILE.H" />
+    <ClInclude Include="..\CODE\XPIPE.H" />
+    <ClInclude Include="..\CODE\XSTRAW.H" />
+    <ClInclude Include="..\CODE\_WSPROTO.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\CODE\2KEYFBUF.ASM" />
+    <None Include="..\CODE\2SUPPORT.ASM" />
+    <None Include="..\CODE\2TXTPRNT.ASM" />
+    <None Include="..\CODE\COORDA.ASM" />
+    <None Include="..\CODE\CPUID.ASM" />
+    <None Include="..\CODE\IPXPROT.ASM" />
+    <None Include="..\CODE\IPXREAL.ASM" />
+    <None Include="..\CODE\KEYFBUFF.ASM" />
+    <None Include="..\CODE\LCWCOMP.ASM" />
+    <None Include="..\CODE\SUPPORT.ASM" />
+    <None Include="..\CODE\TXTPRNT.ASM" />
+    <None Include="..\CODE\WINASM.ASM" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CODE\2KEYFRAM.CPP" />
+    <ClCompile Include="..\CODE\AADATA.CPP" />
+    <ClCompile Include="..\CODE\ABSTRACT.CPP" />
+    <ClCompile Include="..\CODE\ADATA.CPP" />
+    <ClCompile Include="..\CODE\ADPCM.CPP" />
+    <ClCompile Include="..\CODE\AIRCRAFT.CPP" />
+    <ClCompile Include="..\CODE\ALLOC.CPP" />
+    <ClCompile Include="..\CODE\ANIM.CPP" />
+    <ClCompile Include="..\CODE\AUDIO.CPP" />
+    <ClCompile Include="..\CODE\B64PIPE.CPP" />
+    <ClCompile Include="..\CODE\B64STRAW.CPP" />
+    <ClCompile Include="..\CODE\BAR.CPP" />
+    <ClCompile Include="..\CODE\BASE.CPP" />
+    <ClCompile Include="..\CODE\BASE64.CPP" />
+    <ClCompile Include="..\CODE\BBDATA.CPP" />
+    <ClCompile Include="..\CODE\BDATA.CPP" />
+    <ClCompile Include="..\CODE\BENCH.CPP" />
+    <ClCompile Include="..\CODE\BFIOFILE.CPP" />
+    <ClCompile Include="..\CODE\BIGCHECK.CPP" />
+    <ClCompile Include="..\CODE\BLOWFISH.CPP" />
+    <ClCompile Include="..\CODE\BLOWPIPE.CPP" />
+    <ClCompile Include="..\CODE\BLWSTRAW.CPP" />
+    <ClCompile Include="..\CODE\BMP8.CPP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CODE\BUFF.CPP" />
+    <ClCompile Include="..\CODE\BUILDING.CPP" />
+    <ClCompile Include="..\CODE\BULLET.CPP" />
+    <ClCompile Include="..\CODE\CARGO.CPP" />
+    <ClCompile Include="..\CODE\CARRY.CPP" />
+    <ClCompile Include="..\CODE\CCDDE.CPP" />
+    <ClCompile Include="..\CODE\CCFILE.CPP" />
+    <ClCompile Include="..\CODE\CCINI.CPP" />
+    <ClCompile Include="..\CODE\CCMPATH.CPP" />
+    <ClCompile Include="..\CODE\CCPTR.CPP" />
+    <ClCompile Include="..\CODE\CCTEN.CPP" />
+    <ClCompile Include="..\CODE\CDATA.CPP" />
+    <ClCompile Include="..\CODE\CDFILE.CPP" />
+    <ClCompile Include="..\CODE\CELL.CPP" />
+    <ClCompile Include="..\CODE\CHECKBOX.CPP" />
+    <ClCompile Include="..\CODE\CHEKLIST.CPP" />
+    <ClCompile Include="..\CODE\CLASS.CPP" />
+    <ClCompile Include="..\CODE\COLRLIST.CPP" />
+    <ClCompile Include="..\CODE\COMBAT.CPP" />
+    <ClCompile Include="..\CODE\COMBUF.CPP" />
+    <ClCompile Include="..\CODE\COMINIT.CPP" />
+    <ClCompile Include="..\CODE\COMQUEUE.CPP" />
+    <ClCompile Include="..\CODE\CONFDLG.CPP" />
+    <ClCompile Include="..\CODE\CONNECT.CPP" />
+    <ClCompile Include="..\CODE\CONQUER.CPP" />
+    <ClCompile Include="..\CODE\CONST.CPP" />
+    <ClCompile Include="..\CODE\CONTROL.CPP" />
+    <ClCompile Include="..\CODE\COORD.CPP" />
+    <ClCompile Include="..\CODE\CRATE.CPP" />
+    <ClCompile Include="..\CODE\CRC.CPP" />
+    <ClCompile Include="..\CODE\CRCPIPE.CPP" />
+    <ClCompile Include="..\CODE\CRCSTRAW.CPP" />
+    <ClCompile Include="..\CODE\CREDITS.CPP" />
+    <ClCompile Include="..\CODE\CREW.CPP" />
+    <ClCompile Include="..\CODE\CSTRAW.CPP" />
+    <ClCompile Include="..\CODE\CWSTUB.C" />
+    <ClCompile Include="..\CODE\DDE.CPP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CODE\DEBUG.CPP" />
+    <ClCompile Include="..\CODE\DESCDLG.CPP" />
+    <ClCompile Include="..\CODE\DIAL8.CPP" />
+    <ClCompile Include="..\CODE\DIALOG.CPP" />
+    <ClCompile Include="..\CODE\DIBFILE.CPP" />
+    <ClCompile Include="..\CODE\DIBUTIL.CPP" />
+    <ClCompile Include="..\CODE\DISPLAY.CPP" />
+    <ClCompile Include="..\CODE\DOOR.CPP" />
+    <ClCompile Include="..\CODE\DPMI.CPP" />
+    <ClCompile Include="..\CODE\DRIVE.CPP" />
+    <ClCompile Include="..\CODE\DROP.CPP" />
+    <ClCompile Include="..\CODE\DTABLE.CPP" />
+    <ClCompile Include="..\CODE\DYNAVEC.CPP" />
+    <ClCompile Include="..\CODE\EDIT.CPP" />
+    <ClCompile Include="..\CODE\EGOS.CPP" />
+    <ClCompile Include="..\CODE\ENDING.CPP" />
+    <ClCompile Include="..\CODE\EVENT.CPP" />
+    <ClCompile Include="..\CODE\EXPAND.CPP" />
+    <ClCompile Include="..\CODE\FACE.CPP" />
+    <ClCompile Include="..\CODE\FACING.CPP" />
+    <ClCompile Include="..\CODE\FACTORY.CPP" />
+    <ClCompile Include="..\CODE\FIELD.CPP" />
+    <ClCompile Include="..\CODE\FILE.CPP" />
+    <ClCompile Include="..\CODE\FINDPATH.CPP" />
+    <ClCompile Include="..\CODE\FIXED.CPP" />
+    <ClCompile Include="..\CODE\FLASHER.CPP" />
+    <ClCompile Include="..\CODE\FLY.CPP" />
+    <ClCompile Include="..\CODE\FOOT.CPP" />
+    <ClCompile Include="..\CODE\FUSE.CPP" />
+    <ClCompile Include="..\CODE\GADGET.CPP" />
+    <ClCompile Include="..\CODE\GAMEDLG.CPP" />
+    <ClCompile Include="..\CODE\GAUGE.CPP" />
+    <ClCompile Include="..\CODE\GETCPU.CPP" />
+    <ClCompile Include="..\CODE\GLOBALS.CPP" />
+    <ClCompile Include="..\CODE\GOPTIONS.CPP" />
+    <ClCompile Include="..\CODE\GSCREEN.CPP" />
+    <ClCompile Include="..\CODE\HDATA.CPP" />
+    <ClCompile Include="..\CODE\HEAP.CPP" />
+    <ClCompile Include="..\CODE\HELP.CPP" />
+    <ClCompile Include="..\CODE\HOUSE.CPP" />
+    <ClCompile Include="..\CODE\HSV.CPP" />
+    <ClCompile Include="..\CODE\ICONLIST.CPP" />
+    <ClCompile Include="..\CODE\IDATA.CPP" />
+    <ClCompile Include="..\CODE\INFANTRY.CPP" />
+    <ClCompile Include="..\CODE\INI.CPP" />
+    <ClCompile Include="..\CODE\INIBIN.CPP" />
+    <ClCompile Include="..\CODE\INICODE.CPP" />
+    <ClCompile Include="..\CODE\INIT.CPP" />
+    <ClCompile Include="..\CODE\INT.CPP" />
+    <ClCompile Include="..\CODE\INTERNET.CPP" />
+    <ClCompile Include="..\CODE\INTERPAL.CPP" />
+    <ClCompile Include="..\CODE\INTRO.CPP" />
+    <ClCompile Include="..\CODE\IOMAP.CPP" />
+    <ClCompile Include="..\CODE\IOOBJ.CPP" />
+    <ClCompile Include="..\CODE\IPX.CPP" />
+    <ClCompile Include="..\CODE\IPX95.CPP" />
+    <ClCompile Include="..\CODE\IPXADDR.CPP" />
+    <ClCompile Include="..\CODE\IPXCONN.CPP" />
+    <ClCompile Include="..\CODE\IPXGCONN.CPP" />
+    <ClCompile Include="..\CODE\IPXMGR.CPP" />
+    <ClCompile Include="..\CODE\ITABLE.CPP" />
+    <ClCompile Include="..\CODE\JSHELL.CPP" />
+    <ClCompile Include="..\CODE\KEY.CPP" />
+    <ClCompile Include="..\CODE\KEYBOARD.CPP" />
+    <ClCompile Include="..\CODE\KEYFRAME.CPP" />
+    <ClCompile Include="..\CODE\LAYER.CPP" />
+    <ClCompile Include="..\CODE\LCW.CPP" />
+    <ClCompile Include="..\CODE\LCWPIPE.CPP" />
+    <ClCompile Include="..\CODE\LCWSTRAW.CPP" />
+    <ClCompile Include="..\CODE\LCWUNCMP.CPP" />
+    <ClCompile Include="..\CODE\LINK.CPP" />
+    <ClCompile Include="..\CODE\LIST.CPP" />
+    <ClCompile Include="..\CODE\LOADDLG.CPP" />
+    <ClCompile Include="..\CODE\LOGIC.CPP" />
+    <ClCompile Include="..\CODE\LZO1X_C.CPP" />
+    <ClCompile Include="..\CODE\LZO1X_D.CPP" />
+    <ClCompile Include="..\CODE\LZOPIPE.CPP" />
+    <ClCompile Include="..\CODE\LZOSTRAW.CPP" />
+    <ClCompile Include="..\CODE\LZW.CPP" />
+    <ClCompile Include="..\CODE\LZWOTRAW.CPP" />
+    <ClCompile Include="..\CODE\LZWPIPE.CPP" />
+    <ClCompile Include="..\CODE\LZWSTRAW.CPP" />
+    <ClCompile Include="..\CODE\MAP.CPP" />
+    <ClCompile Include="..\CODE\MAPEDDLG.CPP" />
+    <ClCompile Include="..\CODE\MAPEDIT.CPP" />
+    <ClCompile Include="..\CODE\MAPEDPLC.CPP" />
+    <ClCompile Include="..\CODE\MAPEDSEL.CPP" />
+    <ClCompile Include="..\CODE\MAPEDTM.CPP" />
+    <ClCompile Include="..\CODE\MAPSEL.CPP" />
+    <ClCompile Include="..\CODE\MCI.CPP" />
+    <ClCompile Include="..\CODE\MCIMOVIE.CPP" />
+    <ClCompile Include="..\CODE\MENUS.CPP" />
+    <ClCompile Include="..\CODE\MISSION.CPP" />
+    <ClCompile Include="..\CODE\MIXFILE.CPP" />
+    <ClCompile Include="..\CODE\MONOC.CPP" />
+    <ClCompile Include="..\CODE\MOUSE.CPP" />
+    <ClCompile Include="..\CODE\MP.CPP" />
+    <ClCompile Include="..\CODE\MPGSET.CPP" />
+    <ClCompile Include="..\CODE\MPLAYER.CPP" />
+    <ClCompile Include="..\CODE\MPLIB.CPP" />
+    <ClCompile Include="..\CODE\MPLPC.CPP" />
+    <ClCompile Include="..\CODE\MPMGRD.CPP" />
+    <ClCompile Include="..\CODE\MPMGRW.CPP" />
+    <ClCompile Include="..\CODE\MPU.CPP" />
+    <ClCompile Include="..\CODE\MSGBOX.CPP" />
+    <ClCompile Include="..\CODE\MSGLIST.CPP" />
+    <ClCompile Include="..\CODE\NETDLG.CPP" />
+    <ClCompile Include="..\CODE\NOSEQCON.CPP" />
+    <ClCompile Include="..\CODE\NULLCONN.CPP" />
+    <ClCompile Include="..\CODE\NULLDLG.CPP" />
+    <ClCompile Include="..\CODE\NULLMGR.CPP" />
+    <ClCompile Include="..\CODE\NUMBER.CPP" />
+    <ClCompile Include="..\CODE\OBJECT.CPP" />
+    <ClCompile Include="..\CODE\ODATA.CPP" />
+    <ClCompile Include="..\CODE\OPTIONS.CPP" />
+    <ClCompile Include="..\CODE\OVERLAY.CPP" />
+    <ClCompile Include="..\CODE\PACKET.CPP" />
+    <ClCompile Include="..\CODE\PIPE.CPP" />
+    <ClCompile Include="..\CODE\PK.CPP" />
+    <ClCompile Include="..\CODE\PKPIPE.CPP" />
+    <ClCompile Include="..\CODE\PKSTRAW.CPP" />
+    <ClCompile Include="..\CODE\POWER.CPP" />
+    <ClCompile Include="..\CODE\PROFILE.CPP" />
+    <ClCompile Include="..\CODE\QUEUE.CPP" />
+    <ClCompile Include="..\CODE\RADAR.CPP" />
+    <ClCompile Include="..\CODE\RADIO.CPP" />
+    <ClCompile Include="..\CODE\RAMFILE.CPP" />
+    <ClCompile Include="..\CODE\RAND.CPP" />
+    <ClCompile Include="..\CODE\RANDOM.CPP" />
+    <ClCompile Include="..\CODE\RAWFILE.CPP" />
+    <ClCompile Include="..\CODE\RAWOLAPI.CPP" />
+    <ClCompile Include="..\CODE\READLINE.CPP" />
+    <ClCompile Include="..\CODE\RECT.CPP" />
+    <ClCompile Include="..\CODE\REINF.CPP" />
+    <ClCompile Include="..\CODE\RGB.CPP" />
+    <ClCompile Include="..\CODE\RNDSTRAW.CPP" />
+    <ClCompile Include="..\CODE\ROTBMP.CPP" />
+    <ClCompile Include="..\CODE\RULES.CPP" />
+    <ClCompile Include="..\CODE\SAVELOAD.CPP" />
+    <ClCompile Include="..\CODE\SCENARIO.CPP" />
+    <ClCompile Include="..\CODE\SCORE.CPP" />
+    <ClCompile Include="..\CODE\SCROLL.CPP" />
+    <ClCompile Include="..\CODE\SDATA.CPP" />
+    <ClCompile Include="..\CODE\SEDITDLG.CPP" />
+    <ClCompile Include="..\CODE\SENDFILE.CPP" />
+    <ClCompile Include="..\CODE\SEQCONN.CPP" />
+    <ClCompile Include="..\CODE\SESSION.CPP" />
+    <ClCompile Include="..\CODE\SHA.CPP" />
+    <ClCompile Include="..\CODE\SHAPEBTN.CPP" />
+    <ClCompile Include="..\CODE\SHAPIPE.CPP" />
+    <ClCompile Include="..\CODE\SHASTRAW.CPP" />
+    <ClCompile Include="..\CODE\SIDEBAR.CPP" />
+    <ClCompile Include="..\CODE\SLIDER.CPP" />
+    <ClCompile Include="..\CODE\SMUDGE.CPP" />
+    <ClCompile Include="..\CODE\SOUNDDLG.CPP" />
+    <ClCompile Include="..\CODE\SPECIAL.CPP" />
+    <ClCompile Include="..\CODE\SPRITE.CPP" />
+    <ClCompile Include="..\CODE\STARTUP.CPP" />
+    <ClCompile Include="..\CODE\STATBTN.CPP" />
+    <ClCompile Include="..\CODE\STATS.CPP" />
+    <ClCompile Include="..\CODE\STRAW.CPP" />
+    <ClCompile Include="..\CODE\STUB.CPP" />
+    <ClCompile Include="..\CODE\SUPER.CPP" />
+    <ClCompile Include="..\CODE\SURFACE.CPP" />
+    <ClCompile Include="..\CODE\TAB.CPP" />
+    <ClCompile Include="..\CODE\TACTION.CPP" />
+    <ClCompile Include="..\CODE\TARCOM.CPP" />
+    <ClCompile Include="..\CODE\TARGET.CPP" />
+    <ClCompile Include="..\CODE\TCPIP.CPP" />
+    <ClCompile Include="..\CODE\TDATA.CPP" />
+    <ClCompile Include="..\CODE\TEAM.CPP" />
+    <ClCompile Include="..\CODE\TEAMTYPE.CPP" />
+    <ClCompile Include="..\CODE\TECHNO.CPP" />
+    <ClCompile Include="..\CODE\TEMP.CPP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CODE\TEMPLATE.CPP" />
+    <ClCompile Include="..\CODE\TENMGR.CPP" />
+    <ClCompile Include="..\CODE\TERRAIN.CPP" />
+    <ClCompile Include="..\CODE\TEVENT.CPP" />
+    <ClCompile Include="..\CODE\TEXTBTN.CPP" />
+    <ClCompile Include="..\CODE\THEME.CPP" />
+    <ClCompile Include="..\CODE\TOGGLE.CPP" />
+    <ClCompile Include="..\CODE\TOOLTIP.CPP" />
+    <ClCompile Include="..\CODE\TRACKER.CPP" />
+    <ClCompile Include="..\CODE\TRIGGER.CPP" />
+    <ClCompile Include="..\CODE\TRIGTYPE.CPP" />
+    <ClCompile Include="..\CODE\TURRET.CPP" />
+    <ClCompile Include="..\CODE\TXTLABEL.CPP" />
+    <ClCompile Include="..\CODE\UDATA.CPP" />
+    <ClCompile Include="..\CODE\UDPADDR.CPP" />
+    <ClCompile Include="..\CODE\UNIT.CPP" />
+    <ClCompile Include="..\CODE\UTRACKER.CPP" />
+    <ClCompile Include="..\CODE\VDATA.CPP" />
+    <ClCompile Include="..\CODE\VECTOR.CPP" />
+    <ClCompile Include="..\CODE\VERSION.CPP" />
+    <ClCompile Include="..\CODE\VESSEL.CPP" />
+    <ClCompile Include="..\CODE\VISUDLG.CPP" />
+    <ClCompile Include="..\CODE\VORTEX.CPP" />
+    <ClCompile Include="..\CODE\W95TRACE.CPP" />
+    <ClCompile Include="..\CODE\WARHEAD.CPP" />
+    <ClCompile Include="..\CODE\WEAPON.CPP" />
+    <ClCompile Include="..\CODE\WINSTUB.CPP" />
+    <ClCompile Include="..\CODE\WOLAPIOB.CPP" />
+    <ClCompile Include="..\CODE\WOLAPI\WOLAPI_I.C" />
+    <ClCompile Include="..\CODE\WOLEDIT.CPP" />
+    <ClCompile Include="..\CODE\WOLSTRNG.CPP" />
+    <ClCompile Include="..\CODE\WOL_CGAM.CPP" />
+    <ClCompile Include="..\CODE\WOL_CHAT.CPP" />
+    <ClCompile Include="..\CODE\WOL_DNLD.CPP" />
+    <ClCompile Include="..\CODE\WOL_GSUP.CPP" />
+    <ClCompile Include="..\CODE\WOL_LOGN.CPP" />
+    <ClCompile Include="..\CODE\WOL_MAIN.CPP" />
+    <ClCompile Include="..\CODE\WOL_OPT.CPP" />
+    <ClCompile Include="..\CODE\WRITEPCX.CPP" />
+    <ClCompile Include="..\CODE\WSPIPX.CPP" />
+    <ClCompile Include="..\CODE\WSPROTO.CPP" />
+    <ClCompile Include="..\CODE\WSPUDP.CPP" />
+    <ClCompile Include="..\CODE\XPIPE.CPP" />
+    <ClCompile Include="..\CODE\XSTRAW.CPP" />
+    <ClCompile Include="..\CODE\_WSPROTO.CPP" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

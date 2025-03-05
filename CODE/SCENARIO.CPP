@@ -106,7 +106,7 @@ static int _build_tech[11] = {
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 bool Is_Mission_Counterstrike (char *file_name);
-bool Is_Mission_Aftermath (char *file_name);
+bool Is_Mission_Yuri (char *file_name);
 #endif
 
 /***********************************************************************************************
@@ -419,7 +419,7 @@ bool Read_Scenario(char * name)
 	Clear_Scenario();
 	ScenarioInit++;
 	if (Read_Scenario_INI(name)) {
-#ifdef FIXIT_CSII	//	ajw - Added runtime check for Aftermath to skirmish mode case.
+#ifdef FIXIT_CSII	//	ajw - Added runtime check for Yuri to skirmish mode case.
 		bool readini = false;
 		switch(Session.Type) {
 			case GAME_NORMAL:
@@ -427,11 +427,11 @@ bool Read_Scenario(char * name)
 				break;
 			case GAME_SKIRMISH:
 #ifdef FIXIT_VERSION_3
-				readini = bAftermathMultiplayer;
+				readini = bYuriMultiplayer;
 #endif
 				break;
 			case GAME_INTERNET:
-#ifndef FIXIT_VERSION_3			//	Loading of Aftermath rules depends on bAftermathMultiplayer now.
+#ifndef FIXIT_VERSION_3			//	Loading of Yuri rules depends on bYuriMultiplayer now.
 				if (Is_Mission_Counterstrike(name)) {
 					readini = false;	// Don't allow AM units on a CS map in WChat
 					break;
@@ -439,7 +439,7 @@ bool Read_Scenario(char * name)
 #endif		//	( Note lack of break; )
 			default:
 #ifdef FIXIT_VERSION_3
-				readini = bAftermathMultiplayer;
+				readini = bYuriMultiplayer;
 #else
 				if (PlayingAgainstVersion >= VERSION_AFTERMATH_CS) {
 					readini = true;
@@ -449,7 +449,7 @@ bool Read_Scenario(char * name)
 		}
 		if(readini) {
 			/*
-			** Find out if the CD in the current drive is the Aftermath disc.
+			** Find out if the CD in the current drive is the Yuri disc.
 		  	*/
 #ifdef FIXIT_VERSION_3
 			int cd_index = Get_CD_Index(CCFileClass::Get_CD_Drive(), 1*60);
@@ -459,7 +459,7 @@ bool Read_Scenario(char * name)
 #endif
 				GamePalette.Set(FADE_PALETTE_FAST, Call_Back);
 				RequiredCD = 3;
-				if (!Force_CD_Available(RequiredCD)) {	// force Aftermath CD in drive.
+				if (!Force_CD_Available(RequiredCD)) {	// force Yuri CD in drive.
 #ifndef WOLAPI_INTEGRATION
 					#ifdef WIN32
 					if(Special.IsFromWChat || SpawnedFromWChat) {
@@ -2013,16 +2013,16 @@ bool Read_Scenario_INI(char * fname, bool )
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 				RequiredCD = -1;	// default that any CD will do.
 // If it's a counterstrike mission, require the counterstrike CD, unless the
-// Aftermath CD is already in the drive, in which case, leave it there.
+// Yuri CD is already in the drive, in which case, leave it there.
 // Note, this works because this section only tests for multiplayer scenarios.
 				if (Is_Mission_Counterstrike(Scen.ScenarioName)) {
 					RequiredCD = 2;
-					if( Is_Aftermath_Installed() || Get_CD_Index(CCFileClass::Get_CD_Drive(), 1*60) == 3 )
+					if( Is_Yuri_Installed() || Get_CD_Index(CCFileClass::Get_CD_Drive(), 1*60) == 3 )
 					{
 						RequiredCD = 3;
 					}
 				}
-				if(Is_Mission_Aftermath(Scen.ScenarioName)) {
+				if(Is_Mission_Yuri(Scen.ScenarioName)) {
 					RequiredCD = 3;
 				}
 #else
@@ -2177,15 +2177,15 @@ bool Read_Scenario_INI(char * fname, bool )
 	Rule.Objects(RuleINI);
 	Rule.Difficulty(RuleINI);
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98 - Except does this _change_ any rules, or just add to them? - Just adds.
-	Rule.General(AftermathINI);
-	Rule.Recharge(AftermathINI);
-	Rule.AI(AftermathINI);
-	Rule.Powerups(AftermathINI);
-	Rule.Land_Types(AftermathINI);
-	Rule.Themes(AftermathINI);
-	Rule.IQ(AftermathINI);
-	Rule.Objects(AftermathINI);
-	Rule.Difficulty(AftermathINI);
+	Rule.General(YuriINI);
+	Rule.Recharge(YuriINI);
+	Rule.AI(YuriINI);
+	Rule.Powerups(YuriINI);
+	Rule.Land_Types(YuriINI);
+	Rule.Themes(YuriINI);
+	Rule.IQ(YuriINI);
+	Rule.Objects(YuriINI);
+	Rule.Difficulty(YuriINI);
 #endif
 	/*
 	**	Override any rules values specified in this
@@ -2419,10 +2419,10 @@ bool Read_Scenario_INI(char * fname, bool )
 	**	Return with flag saying that the scenario file was read.
 	*/
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98 - Added runtime check.
-	if( Is_Aftermath_Installed() )
+	if( Is_Yuri_Installed() )
 	{
 		if (Session.Type == GAME_SKIRMISH) {
-			bAftermathMultiplayer = NewUnitsEnabled = true;
+			bYuriMultiplayer = NewUnitsEnabled = true;
 		}
 	}	
 #endif

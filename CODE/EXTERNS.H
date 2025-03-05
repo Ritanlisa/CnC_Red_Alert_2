@@ -150,7 +150,7 @@ extern Buffer *					TheaterBuffer;
 extern GetCDClass					CDList;
 extern CCINIClass					RuleINI;
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-extern CCINIClass					AftermathINI;
+extern CCINIClass					YuriINI;
 #endif
 extern Benchmark *				Benches;
 extern int							MapTriggerID;
@@ -327,7 +327,7 @@ extern int							BuildLevel;
 extern unsigned long				ScenarioCRC;
 
 #ifdef FIXIT_VERSION_3
-extern bool							bAftermathMultiplayer;		//	Is multiplayer game being played with Aftermath rules?
+extern bool							bYuriMultiplayer;		//	Is multiplayer game being played with Yuri rules?
 #else
 extern unsigned long 				PlayingAgainstVersion;		// Negotiated version number
 extern bool							Version107InMix;				// Is there a v1.07 in the game
@@ -448,7 +448,7 @@ void Do_Vortex (int x, int y, int frame);
 extern bool ReadyToQuit;							//Are we about to exit cleanly
 extern bool InDebugger;							//Are we being run from a debugger
 void Memory_Error_Handler(void);				//Memory error handler function
-void WWDebugString (char *string);
+void WWDebugString (const char *string);
 #else
 extern bool IsTheaterShape;
 #endif	//WIN32

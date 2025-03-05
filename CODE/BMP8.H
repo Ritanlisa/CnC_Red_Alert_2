@@ -16,6 +16,8 @@
 **	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <cstddef>
+#include <wtypes.h>
 #ifndef BMP8_H
 #define BMP8_H
 

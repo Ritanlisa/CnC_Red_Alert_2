@@ -1869,7 +1869,7 @@ LOCALMIXFILES = \
 	
 
 # Mixfiles as they appear on the CD and hard drive.
-PACKFILES=	$(.path.cd1)MAIN.MIX  EXPAND2.MIX  $(.path.cd1)tobreaki\REDALERT.MIX
+PACKFILES=	$(.path.cd1)MAIN.MIX  EXPAND2.MIX  $(.path.cd1)tobreaki\RA2.MIX
 
 
 # Ant assets SOME ASSETS ARE HERE FOR OVERRIDING
@@ -1902,7 +1902,7 @@ EXPANDFILES= \
 	ANTINTRO.VQP \
 	BMAP.VQP \
 
-# Aftermath expansion files
+# Yuri expansion files
 EXPAND2FILES= \
 	CARR.SHP \
 	CTNK.SHP \
@@ -1955,7 +1955,7 @@ $(.path.cd1)MAIN.MIX: $(CD1MIXFILES)
 
 
 # All mixfiles that exist in the local directory are embedded within this mega-mixfile.
-$(.path.cd1)install\REDALERT.MIX: $(LOCALMIXFILES)
+$(.path.cd1)install\RA2.MIX: $(LOCALMIXFILES)
 	UTILS\MIXFILE -k  -I$(.path.mix) &&!
 	$**
 ! $(.path.cd1)install\$&.mix

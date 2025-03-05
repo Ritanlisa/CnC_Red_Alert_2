@@ -38,6 +38,8 @@
 #ifndef TRIGGER_H
 #define TRIGGER_H
 
+#include	"TRIGTYPE.H"
+
 class TriggerClass {
 	public:
 		RTTIType RTTI;

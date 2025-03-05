@@ -41,7 +41,7 @@
 #include	"building.h"
 #include	"unit.h"
 #include	"template.h"
-
+#include	"defines.h"
 
 /****************************************************************************
 **	Each cell on the map is controlled by the following structure.
@@ -236,7 +236,7 @@ class CellClass
 		UnitClass * Cell_Unit(void) const;
 		VesselClass * Cell_Vessel(void) const;
 		bool Goodie_Check(FootClass * object);
-		bool Is_Clear_To_Build(SpeedType loco = SPEED_TRACK) const;
+		bool Is_Clear_To_Build(SpeedType loco = SpeedType::SPEED_TRACK) const;
 		bool Is_Clear_To_Move(SpeedType loco, bool ignoreinfantry, bool ignorevehicles, int zone=-1, MZoneType check=MZONE_NORMAL) const;
 		bool Is_Spot_Free(int spot_index) const {return (! (Flag.Composite & (1 << spot_index)) ); }
 		int Cell_Color(bool override=false) const;

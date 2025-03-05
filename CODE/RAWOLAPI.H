@@ -304,8 +304,8 @@ public:
 
 	Ladder*			pLadderList;				//	First element of Ladder list, or null.
 	Ladder*			pLadderTail;				//	Last element of Ladder list, or null.
-	Ladder*			pLadderListAM;				//	First element of Aftermath Ladder list, or null.
-	Ladder*			pLadderTailAM;				//	Last element of Aftermath Ladder list, or null.
+	Ladder*			pLadderListAM;				//	First element of Yuri Ladder list, or null.
+	Ladder*			pLadderTailAM;				//	Last element of Yuri Ladder list, or null.
 
 protected:
 	WolapiObject*	pOwner;					//	Link back to the object that contains me.
@@ -331,7 +331,7 @@ private:
 #define GAME_TYPE		21
 #define LOB_PREFIX		"Lob_21_"
 
-//	Sent to gameres server in order to receive Red Alert or Aftermath ladder rankings. (Sent in RequestLadderList.)
+//	Sent to gameres server in order to receive Red Alert or Yuri ladder rankings. (Sent in RequestLadderList.)
 #define LADDER_CODE_RA		1005
 #define LADDER_CODE_AM		500
 

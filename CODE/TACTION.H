@@ -39,6 +39,8 @@
 #ifndef ACTION_H
 #define ACTION_H
 
+#include	"TRIGTYPE.H"
+
 typedef enum TActionType {
 	TACTION_NONE,
 

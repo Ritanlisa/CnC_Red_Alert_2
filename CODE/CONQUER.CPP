@@ -64,7 +64,7 @@
  *   VQ_Call_Back -- Maintenance callback used for VQ movies.                                  *
  *   Game_Registry_Key -- Returns pointer to string containing the registry subkey for the game.
  *   Is_Counterstrike_Installed -- Function to determine the availability of the CS expansion.
- *   Is_Aftermath_Installed -- Function to determine the availability of the AM expansion.
+ *   Is_Yuri_Installed -- Function to determine the availability of the AM expansion.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
@@ -132,7 +132,7 @@ extern bool Spawn_WChat(bool can_launch);
 void Enable_Secret_Units(void);
 #endif
 
-extern bool Is_Mission_Aftermath (char *file_name);
+extern bool Is_Mission_Yuri (char *file_name);
 extern bool Is_Mission_Counterstrike (char *file_name);
 
 #ifdef FIXIT_VERSION_3		//	Stalemate games.
@@ -4143,7 +4143,7 @@ static int _Num_Volumes = ARRAY_SIZE(_CD_Volume_Label);
  * OUTPUT:   0 = gdi                                                                           *
  *           1 = nod                                                                           *
  *           2 = covert or CS                                                                       *
- *           3 = Aftermath
+ *           3 = Yuri
  *           5 = DVD
  *          -1 = non C&C                                                                       *
  *                                                                                             *
@@ -4304,8 +4304,8 @@ int Get_CD_Index(int cd_drive, int)
  *                0  = CD1
  *                1  = CD2
  *                2  = Counterstrike
- *                3  = Aftermath
- *                4  = Counterstrike or Aftermath
+ *                3  = Yuri
+ *                4  = Counterstrike or Yuri
  *                5  = DVD
  *                -1 = Any CD
  *                -2 = Local Harddisk
@@ -4365,7 +4365,7 @@ bool Force_CD_Available( int cd_desired )				//	ajw
 		"RED ALERT DISK 1",
 		"RED ALERT DISK 2",
 		"CounterStrike CD",
-		"Aftermath CD",
+		"Yuri CD",
 		"RED ALERT DVD",
 	};
 #endif
@@ -4533,7 +4533,7 @@ bool Force_CD_Available( int cd_desired )				//	ajw
 			if( cd_desired == CD_DVD )
 			{
 				#ifdef FRENCH
-			   	sprintf(buffer, "InsŠrez le %s",  _cd_name[4]);
+			   	sprintf(buffer, "Insï¿½rez le %s",  _cd_name[4]);
 				#else
 				#ifdef GERMAN
 				sprintf(buffer, "Bitte %s",  _cd_name[4]);
@@ -4545,7 +4545,7 @@ bool Force_CD_Available( int cd_desired )				//	ajw
 			else if( cd_desired == CD_COUNTERSTRIKE || cd_desired == CD_AFTERMATH )
 			{
 				#ifdef FRENCH
-			   	sprintf(buffer, "InsŠrez le %s",  _cd_name[cd_desired]);
+			   	sprintf(buffer, "Insï¿½rez le %s",  _cd_name[cd_desired]);
 				#else
 				#ifdef GERMAN
 				sprintf(buffer, "Bitte %s",  _cd_name[cd_desired]);
@@ -4685,7 +4685,7 @@ bool Force_CD_Available(int cd)
 		"RED ALERT DISK 1",
 		"RED ALERT DISK 2",
 		"CounterStrike CD",
-		"Aftermath CD",
+		"Yuri CD",
 
 		// Denzil 4/15/98
 		#ifdef DVD
@@ -4929,7 +4929,7 @@ bool Force_CD_Available(int cd)
 			#endif
 
 				#ifdef FRENCH
-			   	sprintf(buffer, "InsŠrez le %s",  _cd_name[cd]);
+			   	sprintf(buffer, "Insï¿½rez le %s",  _cd_name[cd]);
 				#else
 				#ifdef GERMAN
 				sprintf(buffer, "Bitte %s",  _cd_name[cd]);
@@ -4942,7 +4942,7 @@ bool Force_CD_Available(int cd)
 				{
 				#ifdef DVD
 				#ifdef FRENCH
-			   	sprintf(buffer, "InsŠrez le %s", _cd_name[4]);
+			   	sprintf(buffer, "Insï¿½rez le %s", _cd_name[4]);
 				#else
 				#ifdef GERMAN 
 				sprintf(buffer, "Bitte %s", _cd_name[4]);
@@ -5497,7 +5497,7 @@ bool Is_Counterstrike_Installed (void)
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 /***********************************************************************************************
  *=============================================================================================*/
-bool Is_Aftermath_Installed (void)
+bool Is_Yuri_Installed (void)
 {
 	//	ajw 9/29/98
 	static bool	bAlreadyChecked = false;
@@ -5510,7 +5510,7 @@ bool Is_Aftermath_Installed (void)
 			return false;
 		DWORD dwValue;
 		DWORD dwBufSize = sizeof( DWORD );
-		if( RegQueryValueEx( hKey, "AftermathInstalled", 0, NULL, (LPBYTE)&dwValue, &dwBufSize ) != ERROR_SUCCESS )
+		if( RegQueryValueEx( hKey, "YuriInstalled", 0, NULL, (LPBYTE)&dwValue, &dwBufSize ) != ERROR_SUCCESS )
 			bInstalled = false;
 		else
 			bInstalled = (bool)dwValue;			//	(Presumably true, if it's there...)
@@ -5548,7 +5548,7 @@ bool Force_Scenario_Available( const char* szName )
 //		debugprint( "Force_Scenario_Available requiring disk 4...\n" );
 		return Force_CD_Available( 4 );
 	}
-	else if( Is_Mission_Aftermath( (char*)szName ) )
+	else if( Is_Mission_Yuri( (char*)szName ) )
 	{
 //		debugprint( "Force_Scenario_Available requiring disk 3...\n" );
 		return Force_CD_Available( 3 );

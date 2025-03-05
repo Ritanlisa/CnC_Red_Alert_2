@@ -56,7 +56,7 @@ struct GAMEPARAMS
 {
 	GlobalPacketType	GPacket;
 	//	My additions to game params. - ajw
-	bool				bAftermathUnits;
+	bool				bYuriUnits;
 	bool				bSlowUnitBuildRate;
 };
 
@@ -134,7 +134,7 @@ protected:
 	};
 	void	ScenarioDisplayMode( SCENARIO_GAMEKIND ScenKind );
 
-//	bool	bSpecialAftermathScenario( const char* szScenarioDescription );
+//	bool	bSpecialYuriScenario( const char* szScenarioDescription );
 
 public:
 	int d_dialog_w;
@@ -255,7 +255,7 @@ protected:
 	StaticButtonClass*	pStaticAIPlayers;
 	char szHouseBuffer[25];						// buffer for house droplist
 	DropListClass*		pDropListHouse;
-	BigCheckBoxClass*	pCheckAftermathUnits;
+	BigCheckBoxClass*	pCheckYuriUnits;
 	ShapeButtonClass*	pShpBtnScenarioRA;
 	ShapeButtonClass*	pShpBtnScenarioCS;
 	ShapeButtonClass*	pShpBtnScenarioAM;
@@ -297,7 +297,7 @@ protected:
 	ToolTipClass*		pToolTipHitLast;		//	ToolTip the mouse was last over, or null.
 
 	//	Extra game params...
-	bool				bAftermathUnits;		//	True if aftermath units are to be used in the game.
+	bool				bYuriUnits;		//	True if yuri units are to be used in the game.
 	bool				bSlowUnitBuildRate;
 
 	SCENARIO_GAMEKIND	ScenKindCurrent;		//	Describes what gamekind of scenarios we are viewing, if host.

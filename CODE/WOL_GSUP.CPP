@@ -31,14 +31,14 @@
 extern char const* EngMisStr[];
 
 bool Is_Mission_126x126 (char *file_name);
-bool Is_Mission_Aftermath (char *file_name);
+bool Is_Mission_Yuri (char *file_name);
 bool Is_Mission_Counterstrike (char *file_name);
 
 bool Force_Scenario_Available( const char* szName );
 
 int ScenarioIndex_From_Filename( const char* szScenarioFilename );
 
-bool bSpecialAftermathScenario( const char* szScenarioDescription );
+bool bSpecialYuriScenario( const char* szScenarioDescription );
 
 #include "WolDebug.h"
 
@@ -129,7 +129,7 @@ WOL_GameSetupDialog::WOL_GameSetupDialog( WolapiObject* pWO, bool bHost ) : pWO(
 		pStaticCredits( NULL ),
 		pStaticAIPlayers( NULL ),
 		pDropListHouse( NULL ),
-		pCheckAftermathUnits( NULL ),
+		pCheckYuriUnits( NULL ),
 		nHostLastParamID( 0 ),
 		nGuestLastParamID( 0 ),
 		bWaitingToStart( false ),
@@ -178,7 +178,7 @@ WOL_GameSetupDialog::~WOL_GameSetupDialog()
 	delete pStaticCredits;
 	delete pStaticAIPlayers;
 	delete pDropListHouse;
-	delete pCheckAftermathUnits;
+	delete pCheckYuriUnits;
 	delete pTTipAcceptStart;
 	delete pTTipCancel;
 	delete pTTipAction;
@@ -389,12 +389,12 @@ void WOL_GameSetupDialog::Initialize()
 		MFCD::Retrieve("BTN-DN.SHP") );
 
 	//	ajw - This checkbox is not used. Could be turned on, though.
-	pCheckAftermathUnits = new BigCheckBoxClass( BUTTON_AFTERMATHUNITS, d_amunits_x, d_amunits_y, d_amunits_w, d_amunits_h,
-													"Aftermath units enabled", TPF_TEXT, false );
+	pCheckYuriUnits = new BigCheckBoxClass( BUTTON_AFTERMATHUNITS, d_amunits_x, d_amunits_y, d_amunits_w, d_amunits_h,
+													"Yuri units enabled", TPF_TEXT, false );
 
 	if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME )
 	{
-		bAftermathUnits = true;
+		bYuriUnits = true;
 		int current_drive = CCFileClass::Get_CD_Drive();
 		int cd_index = Get_CD_Index(current_drive, 1*60);
 		if( cd_index != 3 && cd_index != 5 )
@@ -404,8 +404,8 @@ void WOL_GameSetupDialog::Initialize()
 	}
 	else
 	{
-		bAftermathUnits = false;
-		pCheckAftermathUnits->Disable();
+		bYuriUnits = false;
+		pCheckYuriUnits->Disable();
 	}
 
 	bSlowUnitBuildRate = true;
@@ -417,7 +417,7 @@ void WOL_GameSetupDialog::Initialize()
 
 	int iScenarioUserTabPos;
 	if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::CSGAME || pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME ||
-		( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Aftermath_Installed() && !pWO->GameInfoCurrent.bTournament ) )
+		( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Yuri_Installed() && !pWO->GameInfoCurrent.bTournament ) )
 		//	Place user tab in the third tab position. (It may still not be present.)
 		iScenarioUserTabPos = d_scenariolist_x + TABSPACING * 2;
 	else
@@ -439,7 +439,7 @@ void WOL_GameSetupDialog::Initialize()
 		pGaugeCredits->Disable();
 		pGaugeAIPlayers->Disable();
 		pCheckListOptions->Disable();
-		pCheckAftermathUnits->Disable();
+		pCheckYuriUnits->Disable();
 	}
 
 	pWO->LinkToGameDlg( pILDisc, pILPlayers );
@@ -571,13 +571,13 @@ RESULT_WOLGSUP WOL_GameSetupDialog::Show()
 						ar_szScenarios[ SCENARIO_CS ].Add( szScenarioNameShow );
 						ar_szScenIndexes[ SCENARIO_CS ].Add( (void*)i );
 					}
-					else if( Is_Mission_Aftermath( (char*)( Session.Scenarios[i]->Get_Filename() ) ) )
+					else if( Is_Mission_Yuri( (char*)( Session.Scenarios[i]->Get_Filename() ) ) )
 					{
 	//					debugprint( " ---------------- Adding scenario %s as AM\n", szScenarioNameShow );
-						//	If this is not an Aftermath game channel, we must filter out any AM maps that have
+						//	If this is not an Yuri game channel, we must filter out any AM maps that have
 						//	special AM units on them.
 						if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME ||
-							!bSpecialAftermathScenario( pMMission->Description() ) )
+							!bSpecialYuriScenario( pMMission->Description() ) )
 						{
 							ar_szScenarios[ SCENARIO_AM ].Add( szScenarioNameShow );
 							ar_szScenIndexes[ SCENARIO_AM ].Add( (void*)i );
@@ -1075,7 +1075,7 @@ RESULT_WOLGSUP WOL_GameSetupDialog::Show()
 					{
 						if( Is_Mission_Counterstrike( szScenarioFileName ) )
 							pDIB = pWO->OldRAGameTypeInfos[ 1 ].pDIB;
-						else if( Is_Mission_Aftermath( szScenarioFileName ) )
+						else if( Is_Mission_Yuri( szScenarioFileName ) )
 							pDIB = pWO->OldRAGameTypeInfos[ 2 ].pDIB;
 						else
 							pDIB = pWO->OldRAGameTypeInfos[ 0 ].pDIB;
@@ -1321,7 +1321,7 @@ RESULT_WOLGSUP WOL_GameSetupDialog::Show()
 				break;
 
 			case ( BUTTON_AFTERMATHUNITS | KN_BUTTON ):
-				bAftermathUnits = pCheckAftermathUnits->IsOn;
+				bYuriUnits = pCheckYuriUnits->IsOn;
 				break;
 
 			case ( BUTTON_SENDEDIT | KN_BUTTON ):
@@ -1609,10 +1609,10 @@ void WOL_GameSetupDialog::SetSpecialControlStates()
 	}
 	pGaugeAIPlayers->Set_Value(Session.Options.AIPlayers);
 
-	if( bAftermathUnits )
-		pCheckAftermathUnits->Turn_On();
+	if( bYuriUnits )
+		pCheckYuriUnits->Turn_On();
 	else
-		pCheckAftermathUnits->Turn_Off();
+		pCheckYuriUnits->Turn_Off();
 }
 
 #define DRAWTABDOWN		Turn_On()
@@ -1658,7 +1658,7 @@ void WOL_GameSetupDialog::BindControls( bool bBind )
 					pShpBtnScenarioCS->DRAWTABDOWN;
 				}
 				else if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME ||
-						( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Aftermath_Installed() && !pWO->GameInfoCurrent.bTournament )	)
+						( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Yuri_Installed() && !pWO->GameInfoCurrent.bTournament )	)
 				{
 					pShpBtnScenarioAM->Add_Tail(*commands);
 					pShpBtnScenarioAM->DRAWTABDOWN;
@@ -1700,7 +1700,7 @@ void WOL_GameSetupDialog::BindControls( bool bBind )
 					pShpBtnScenarioCS->DRAWTABDOWN;
 				}
 				else if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME ||
-						( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Aftermath_Installed() && !pWO->GameInfoCurrent.bTournament ) )
+						( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Yuri_Installed() && !pWO->GameInfoCurrent.bTournament ) )
 				{
 					pShpBtnScenarioAM->Add_Tail(*commands);
 					pShpBtnScenarioAM->DRAWTABDOWN;
@@ -1727,7 +1727,7 @@ void WOL_GameSetupDialog::BindControls( bool bBind )
 		pTextBtnAction->Add_Tail(*commands);
 		pILDisc->Add_Tail(*commands);
 		pDropListHouse->Add_Tail(*commands);
-//		pCheckAftermathUnits->Add_Tail(*commands);
+//		pCheckYuriUnits->Add_Tail(*commands);
 	}
 	else
 	{
@@ -1752,7 +1752,7 @@ void WOL_GameSetupDialog::BindControls( bool bBind )
 			if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::CSGAME )
 				pShpBtnScenarioCS->Zap();
 			else if( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::AMGAME ||
-					( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Aftermath_Installed() && !pWO->GameInfoCurrent.bTournament ) )
+					( pWO->GameInfoCurrent.GameKind == CREATEGAMEINFO::RAGAME && Is_Yuri_Installed() && !pWO->GameInfoCurrent.bTournament ) )
 				pShpBtnScenarioAM->Zap();
 			pILScens->Zap();
 		}
@@ -1772,7 +1772,7 @@ void WOL_GameSetupDialog::BindControls( bool bBind )
 		pTextBtnAction->Zap();
 		pILDisc->Zap();
 		pDropListHouse->Zap();
-//		pCheckAftermathUnits->Zap();
+//		pCheckYuriUnits->Zap();
 	}
 }
 
@@ -2269,8 +2269,8 @@ bool WOL_GameSetupDialog::bParamsUnfresh()
 //		Debug_GlobalPacketType( GParamsLastSent.GPacket );
 //		debugprint( "-------------------  NEW...\n" );
 //		Debug_GlobalPacketType( GParamsNow.GPacket );
-//		debugprint( "old bAftermathUnits = %i\n", GParamsLastSent.bAftermathUnits );
-//		debugprint( "new bAftermathUnits = %i\n", GParamsNow.bAftermathUnits );
+//		debugprint( "old bYuriUnits = %i\n", GParamsLastSent.bYuriUnits );
+//		debugprint( "new bYuriUnits = %i\n", GParamsNow.bYuriUnits );
 //	}
 
 	return !( GParamsNow == GParamsLastSent );
@@ -2344,7 +2344,7 @@ void WOL_GameSetupDialog::SendParams()
 		GParamsLastSent.GPacket.ScenarioInfo.Special.IsTSpread,
 		GParamsLastSent.GPacket.ScenarioInfo.GameSpeed,
 		GParamsLastSent.GPacket.ScenarioInfo.Version,
-		GParamsLastSent.bAftermathUnits,			//	Not currently used.
+		GParamsLastSent.bYuriUnits,			//	Not currently used.
 		GParamsLastSent.bSlowUnitBuildRate,
 		RuleINI.Get_Unique_ID()		//	Used to verify rules.ini files match.
 		);
@@ -2497,7 +2497,7 @@ bool WOL_GameSetupDialog::AcceptParams( char* szParams )
 
 	szToken = strtok( NULL, szDelimiter );
 	if( !szToken )	return false;
-	bAftermathUnits = (bool)atoi( szToken );
+	bYuriUnits = (bool)atoi( szToken );
 
 	szToken = strtok( NULL, szDelimiter );
 	if( !szToken )	return false;
@@ -2538,7 +2538,7 @@ void WOL_GameSetupDialog::SetGParamsToCurrent( GAMEPARAMS& GParams )
 	GParams.GPacket.ScenarioInfo.GameSpeed = Options.GameSpeed;
 	GParams.GPacket.ScenarioInfo.Version = VerNum.Get_Clipped_Version();
 
-	GParams.bAftermathUnits = bAftermathUnits;
+	GParams.bYuriUnits = bYuriUnits;
 	GParams.bSlowUnitBuildRate = bSlowUnitBuildRate;
 }
 
@@ -2546,7 +2546,7 @@ void WOL_GameSetupDialog::SetGParamsToCurrent( GAMEPARAMS& GParams )
 bool operator==( const GAMEPARAMS& gp1, const GAMEPARAMS& gp2 )
 {
 	return	gp1.GPacket == gp2.GPacket &&
-			gp1.bAftermathUnits == gp2.bAftermathUnits && gp1.bSlowUnitBuildRate == gp2.bSlowUnitBuildRate;
+			gp1.bYuriUnits == gp2.bYuriUnits && gp1.bSlowUnitBuildRate == gp2.bSlowUnitBuildRate;
 }
 
 //***********************************************************************************************
@@ -3365,7 +3365,7 @@ void WOL_GameSetupDialog::TriggerGameStart( char* szGoMessage )
 		if( bRequestedScenarioDownload )
 		{
 			Session.Options.ScenarioIndex = 1;
-			if( bSpecialAftermathScenario( Session.Options.ScenarioDescription ) )
+			if( bSpecialYuriScenario( Session.Options.ScenarioDescription ) )
 			{
 				//	Shouldn't ever happen. We should never have the opportunity to ask for one of these maps to be downloaded.
 				bExitForGameTrigger = false;
@@ -3459,8 +3459,8 @@ void WOL_GameSetupDialog::TriggerGameStart( char* szGoMessage )
 	Session.CommProtocol = COMM_PROTOCOL_MULTI_E_COMP;
 	Ipx.Set_Timing (30, (unsigned long) -1, 600);
 
-	pWO->bEnableNewAftermathUnits = bAftermathUnits;
-	bAftermathMultiplayer = bAftermathUnits;
+	pWO->bEnableNewYuriUnits = bYuriUnits;
+	bYuriMultiplayer = bYuriUnits;
 
 	*pWO->szExternalPager = 0;
 
@@ -3472,10 +3472,10 @@ void WOL_GameSetupDialog::TriggerGameStart( char* szGoMessage )
 #endif
 
 //***********************************************************************************************
-bool bSpecialAftermathScenario( const char* szScenarioDescription )
+bool bSpecialYuriScenario( const char* szScenarioDescription )
 {
-	//	Returns true if szScenarioDescription matches one of the descriptions for Aftermath multiplayer
-	//	scenarios that have special Aftermath-only units *embedded* within them.
+	//	Returns true if szScenarioDescription matches one of the descriptions for Yuri multiplayer
+	//	scenarios that have special Yuri-only units *embedded* within them.
 	if( strcmp( szScenarioDescription, "Booby Traps (Mega 8 players)" ) == 0 ||
 		strcmp( szScenarioDescription, "Central Conflict Extreme (Mega 8 players)" ) == 0 ||
 		strcmp( szScenarioDescription, "Circles of Death (Mega 8 players)" ) == 0 ||

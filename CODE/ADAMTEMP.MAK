@@ -1676,7 +1676,7 @@ EXPANDFILES= \
 	ANTEND.VQP \
 	ANTINTRO.VQP \
 
-# Aftermath expansion files
+# Yuri expansion files
 EXPAND2FILES= \
 	CARR.SHP \
 

@@ -156,7 +156,7 @@ CREATEGAMEINFO WOL_CreateGame_Dialog( WolapiObject* pWO )
 	if( !Is_Counterstrike_Installed() )
 		CS_Check.Disable();
 
-	if( !Is_Aftermath_Installed() )
+	if( !Is_Yuri_Installed() )
 		AM_Check.Disable();
 
 	/*

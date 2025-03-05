@@ -62,212 +62,212 @@ Building constructin time accelerated?
 # TXT_SPEED_BUILD
 Scenario authentication code missing or invalid. Re-save scenario to correct it.
 # TXT_SCENARIO_ERRORx
-�Frames:��F/R:�CPU:���F/R:���Cells:�Targ:��S-Bar:�Paths:�����Sprung Triggers:Ŀ
-�        �    �      �      �      �      �      �          �                 �
-�G-Time:�����Ĵ      �      �      �      �      �          �                 �
-�        �    �      �      �      �      �      �          �                 �
-����������    �      �      �      �      �      �          �                 �
-�             �      �      �      �      �      �          �                 �
-�             �      �      �      �      �      �          �                 �
-�             �      �      �      �      �      �          �                 �
-�             �      �      �      �      �      �          �                 �
-�             �      �      �      �      �      �          �                 �
-�Object Count:�      �      �      �      �      �          �                 �
-�   -Units    �      �      �      �      �      �          �                 �
-�   -Infantry �CPU Workload:�������������������������������������������������Ĵ
-�   -Aircraft �                                                               �
-�   -Ships    �                                                               �
-�   -Buildings�                                                               �
-�   -Terrain  �                                                               �
-�   -Bullets  �                                                               �
-�   -Anims    �                                                               �
-�   -Teams    �                                                               �
-�   -Triggers �                                                               �
-�   -TrigTypes�                                                               �
-�   -Factories�                                                               �
-�������������������������������������������������������������������������������
+ÚFrames:ÄÂF/R:ÂCPU:ÄÄÂF/R:ÄÄÂCells:ÂTarg:ÄÂS-Bar:ÂPaths:ÄÄÄÄÂSprung Triggers:Äż
+ł        ł    ł      ł      ł      ł      ł      ł          ł                 ł
+ĂG-Time:ÄĹÄÄÄÄ´      ł      ł      ł      ł      ł          ł                 ł
+ł        ł    ł      ł      ł      ł      ł      ł          ł                 ł
+ĂÄÄÄÄÄÄÄÄŮ    ł      ł      ł      ł      ł      ł          ł                 ł
+ł             ł      ł      ł      ł      ł      ł          ł                 ł
+ł             ł      ł      ł      ł      ł      ł          ł                 ł
+ł             ł      ł      ł      ł      ł      ł          ł                 ł
+ł             ł      ł      ł      ł      ł      ł          ł                 ł
+ł             ł      ł      ł      ł      ł      ł          ł                 ł
+ĂObject Count:´      ł      ł      ł      ł      ł          ł                 ł
+ł   -Units    ł      ł      ł      ł      ł      ł          ł                 ł
+ł   -Infantry ĂCPU Workload:ÁÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł   -Aircraft ł                                                               ł
+ł   -Ships    ł                                                               ł
+ł   -Buildingsł                                                               ł
+ł   -Terrain  ł                                                               ł
+ł   -Bullets  ł                                                               ł
+ł   -Anims    ł                                                               ł
+ł   -Teams    ł                                                               ł
+ł   -Triggers ł                                                               ł
+ł   -TrigTypesł                                                               ł
+ł   -Factoriesł                                                               ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Stress Tracking                            F12 ->
 # TXT_DEBUG_STRESS
-�Full Name:���������Coord:���Hgt:�Str:�Ace:�Spd:�Ammo�Arm:�Grp:�Cloak:�Price:Ŀ
-�                  �        �    �    �    �    �    �    �    �      �       �
-�Owner:�������������Trigger:�TarCom:��STarCom:�PFace:�Path:��������Try:�Delay:�
-�                  �        �        �        �      �            �    �      �
-�Cargo:����Target:��Next:����NavCom:��SNavCom:�SFace:�PBrk:�HeadTo:��Archive:Ĵ
-�         �        �        �        �        �      �     �        �         �
-�Tmr:�St:�Rt:�Stage�Radio:���Radio Message History:��������������������������Ĵ
-�    �   �   �     �        �                                                 �
-�Mission:�������Queue:�����Ĵ                                                 �
-�              �            �                                                 �
-�Gems:�Gold:�����������������������������������������������������������������Ĵ
-�     �     �                                                                 �
-�����������������������������������������������������������������������������Ĵ
-�Is Down     �AnimAttached�Primary     �Player Owned�Initiated   �Is Dumping  �
-�To Damage   �Falling [  ]�Loaner      �Player Aware�Deploying   �Teleported  �
-�To Display  �Useless     �Locked      �AI aware    �Firing      �            �
-�In Limbo    �Ticked Off  �Recoil      �Lemon       �Rotating    �            �
-�Selected    �Cloakable   �Tethered    �Invul [    ]�Driving     �            �
-�To Look     �Unloading   �Formation   �            �            �            �
-�Team:����Mmbrs:�Qnt:�Center:��Target:��Formation:���������������������������͵
-�        �      �    �        �        �            �Understrngth�Moving      �
-�Mission:������������������������������������������ĴFullStrength�ForcedActive�
-�                             �                     �HasBeen     �Reforming   �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂCoord:ÄÄÂHgt:ÂStr:ÂAce:ÂSpd:ÂAmmoÂArm:ÂGrp:ÂCloak:ÂPrice:Äż
+ł                  ł        ł    ł    ł    ł    ł    ł    ł    ł      ł       ł
+ĂOwner:ÄÄÄÄÄÄÄÄÄÄÄÄĹTrigger:ĹTarCom:ÄÂSTarCom:ÂPFace:ĹPath:ÄÄÄÄÁÄÄÂTry:ÂDelay:´
+ł                  ł        ł        ł        ł      ł            ł    ł      ł
+ĂCargo:ÄÄÄÂTarget:ÄĹNext:ÄÄÄĹNavCom:ÄĹSNavCom:ĹSFace:ĹPBrk:ÂHeadTo:ÄÂArchive:Ä´
+ł         ł        ł        ł        ł        ł      ł     ł        ł         ł
+ĂTmr:ÂSt:ÂRt:ÂStageĹRadio:ÄÄĹRadio Message History:ÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ´
+ł    ł   ł   ł     ł        ł                                                 ł
+ĂMission:ÁÄÄÄÁÄÂQueue:ÄÄÄÄÄÄ´                                                 ł
+ł              ł            ł                                                 ł
+ĂGems:ÂGold:ÂÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł     ł     ł                                                                 ł
+ĂÄÄÄÄÄÁÄÄÄÄÄÁÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Down     łAnimAttachedłPrimary     łPlayer OwnedłInitiated   łIs Dumping  ł
+łTo Damage   łFalling [  ]łLoaner      łPlayer AwarełDeploying   łTeleported  ł
+łTo Display  łUseless     łLocked      łAI aware    łFiring      ł            ł
+łIn Limbo    łTicked Off  łRecoil      łLemon       łRotating    ł            ł
+łSelected    łCloakable   łTethered    łInvul [    ]łDriving     ł            ł
+łTo Look     łUnloading   łFormation   ł            ł            ł            ł
+ĆTeam:ÍÍÍŃMmbrs:ŃQnt:ŃCenter:ÍŃTarget:ÍŘFormation:ÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍľ
+ł        ł      ł    ł        ł        ł            łUnderstrngthłMoving      ł
+ĂMission:ÁÄÄÄÄÄÄÁÄÄÄÄÁÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ´FullStrengthłForcedActiveł
+ł                             ł                     łHasBeen     łReforming   ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Vehicle                                    F12 ->
 # TXT_DEBUG_VEHICLE
-�Full Name:���������Coord:���Hgt:�Str:�Ace:�Spd:�Ammo�Arm:�Grp:�Cloak:�Price:Ŀ
-�                  �        �    �    �    �    �    �    �    �      �       �
-�Owner:�������������Trigger:�TarCom:��STarCom:�PFace:�Path:��������Try:�Delay:�
-�                  �        �        �        �      �            �    �      �
-�Cargo:����Target:��Next:����NavCom:��SNavCom:�SFace:�PBrk:�HeadTo:��Archive:Ĵ
-�         �        �        �        �        �      �     �        �         �
-�Tmr:�St:�Rt:�Stage�Radio:���Radio Message History:��������������������������Ĵ
-�    �   �   �     �        �                                                 �
-�Mission:�������Queue:�����Ĵ                                                 �
-�              �            �                                                 �
-�Doing:�Fear:����������������������������������������������������������������Ĵ
-�      �     �                                                                �
-�����������������������������������������������������������������������������Ĵ
-�Is Down     �AnimAttached�Primary     �Player Owned�Initiated   �Technician  �
-�To Damage   �Falling [  ]�Loaner      �Player Aware�Deploying   �Stoked      �
-�To Display  �Useless     �Locked      �AI Aware    �Firing      �Prone       �
-�In Limbo    �Ticked Off  �Recoil      �Lemon       �Rotating    �            �
-�Selected    �Cloakable   �Tethered    �Invul [    ]�Driving     �            �
-�To Look     �Unloading   �Formation   �            �            �            �
-�Team:����Mmbrs:�Qnt:�Center:��Target:��Formation:���������������������������͵
-�        �      �    �        �        �            �Understrngth�Moving      �
-�Mission:������������������������������������������ĴFullStrength�ForcedActive�
-�                             �                     �HasBeen     �Reforming   �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂCoord:ÄÄÂHgt:ÂStr:ÂAce:ÂSpd:ÂAmmoÂArm:ÂGrp:ÂCloak:ÂPrice:Äż
+ł                  ł        ł    ł    ł    ł    ł    ł    ł    ł      ł       ł
+ĂOwner:ÄÄÄÄÄÄÄÄÄÄÄÄĹTrigger:ĹTarCom:ÄÂSTarCom:ÂPFace:ĹPath:ÄÄÄÄÁÄÄÂTry:ÂDelay:´
+ł                  ł        ł        ł        ł      ł            ł    ł      ł
+ĂCargo:ÄÄÄÂTarget:ÄĹNext:ÄÄÄĹNavCom:ÄĹSNavCom:ĹSFace:ĹPBrk:ÂHeadTo:ÄÂArchive:Ä´
+ł         ł        ł        ł        ł        ł      ł     ł        ł         ł
+ĂTmr:ÂSt:ÂRt:ÂStageĹRadio:ÄÄĹRadio Message History:ÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ´
+ł    ł   ł   ł     ł        ł                                                 ł
+ĂMission:ÁÄÄÄÁÄÂQueue:ÄÄÄÄÄÄ´                                                 ł
+ł              ł            ł                                                 ł
+ĂDoing:ÂFear:ÂÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł      ł     ł                                                                ł
+ĂÄÄÄÄÄÄÁÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Down     łAnimAttachedłPrimary     łPlayer OwnedłInitiated   łTechnician  ł
+łTo Damage   łFalling [  ]łLoaner      łPlayer AwarełDeploying   łStoked      ł
+łTo Display  łUseless     łLocked      łAI Aware    łFiring      łProne       ł
+łIn Limbo    łTicked Off  łRecoil      łLemon       łRotating    ł            ł
+łSelected    łCloakable   łTethered    łInvul [    ]łDriving     ł            ł
+łTo Look     łUnloading   łFormation   ł            ł            ł            ł
+ĆTeam:ÍÍÍŃMmbrs:ŃQnt:ŃCenter:ÍŃTarget:ÍŘFormation:ÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍľ
+ł        ł      ł    ł        ł        ł            łUnderstrngthłMoving      ł
+ĂMission:ÁÄÄÄÄÄÄÁÄÄÄÄÁÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ´FullStrengthłForcedActiveł
+ł                             ł                     łHasBeen     łReforming   ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Infantry                                   F12 ->
 # TXT_DEBUG_INFANTRY
-�Full Name:���������Coord:���Hgt:�Str:�Ace:�Spd:�Ammo�Arm:�Grp:�Cloak:�Price:Ŀ
-�                  �        �    �    �    �    �    �    �    �      �       �
-�Owner:�������������Trigger:�TarCom:��STarCom:�PFace:�Path:��������Try:�Delay:�
-�                  �        �        �        �      �            �    �      �
-�Cargo:����Target:��Next:����NavCom:��SNavCom:�SFace:�PBrk:�HeadTo:��Archive:Ĵ
-�         �        �        �        �        �      �     �        �         �
-�Tmr:�St:�Rt:�Stage�Radio:���Radio Message History:��������������������������Ĵ
-�    �   �   �     �        �                                                 �
-�Mission:�������Queue:�����Ĵ                                                 �
-�              �            �                                                 �
-�����������������������������������������������������������������������������Ĵ
-�                                                                             �
-�����������������������������������������������������������������������������Ĵ
-�Is Down     �AnimAttached�Primary     �Player Owned�Initiated   �Repairing   �
-�To Damage   �Falling [  ]�Loaner      �Player Aware�Deploying   �ToSelfRepair�
-�To Display  �Useless     �Locked      �AI Aware    �Firing      �            �
-�In Limbo    �Ticked Off  �Recoil      �Lemon       �Rotating    �            �
-�Selected    �Cloakable   �Tethered    �Invul [    ]�Driving     �            �
-�To Look     �Unloading   �Formation   �            �            �            �
-�Team:����Mmbrs:�Qnt:�Center:��Target:��Formation:���������������������������͵
-�        �      �    �        �        �            �Understrngth�Moving      �
-�Mission:������������������������������������������ĴFullStrength�ForcedActive�
-�                             �                     �HasBeen     �Reforming   �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂCoord:ÄÄÂHgt:ÂStr:ÂAce:ÂSpd:ÂAmmoÂArm:ÂGrp:ÂCloak:ÂPrice:Äż
+ł                  ł        ł    ł    ł    ł    ł    ł    ł    ł      ł       ł
+ĂOwner:ÄÄÄÄÄÄÄÄÄÄÄÄĹTrigger:ĹTarCom:ÄÂSTarCom:ÂPFace:ĹPath:ÄÄÄÄÁÄÄÂTry:ÂDelay:´
+ł                  ł        ł        ł        ł      ł            ł    ł      ł
+ĂCargo:ÄÄÄÂTarget:ÄĹNext:ÄÄÄĹNavCom:ÄĹSNavCom:ĹSFace:ĹPBrk:ÂHeadTo:ÄÂArchive:Ä´
+ł         ł        ł        ł        ł        ł      ł     ł        ł         ł
+ĂTmr:ÂSt:ÂRt:ÂStageĹRadio:ÄÄĹRadio Message History:ÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ´
+ł    ł   ł   ł     ł        ł                                                 ł
+ĂMission:ÁÄÄÄÁÄÂQueue:ÄÄÄÄÄÄ´                                                 ł
+ł              ł            ł                                                 ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł                                                                             ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Down     łAnimAttachedłPrimary     łPlayer OwnedłInitiated   łRepairing   ł
+łTo Damage   łFalling [  ]łLoaner      łPlayer AwarełDeploying   łToSelfRepairł
+łTo Display  łUseless     łLocked      łAI Aware    łFiring      ł            ł
+łIn Limbo    łTicked Off  łRecoil      łLemon       łRotating    ł            ł
+łSelected    łCloakable   łTethered    łInvul [    ]łDriving     ł            ł
+łTo Look     łUnloading   łFormation   ł            ł            ł            ł
+ĆTeam:ÍÍÍŃMmbrs:ŃQnt:ŃCenter:ÍŃTarget:ÍŘFormation:ÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍľ
+ł        ł      ł    ł        ł        ł            łUnderstrngthłMoving      ł
+ĂMission:ÁÄÄÄÄÄÄÁÄÄÄÄÁÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ´FullStrengthłForcedActiveł
+ł                             ł                     łHasBeen     łReforming   ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Ship                                       F12 ->
 # TXT_DEBUG_SHIP
-�Full Name:���������Coord:���Hgt:�Str:�Ace:�Spd:�Ammo�Arm:�Grp:�Cloak:�Price:Ŀ
-�                  �        �    �    �    �    �    �    �    �      �       �
-�Owner:�������������Trigger:�TarCom:��STarCom:�PFace:�Path:��������Try:�Delay:�
-�                  �        �        �        �      �            �    �      �
-�Cargo:����Target:��Next:����NavCom:��SNavCom:�SFace:�PBrk:�HeadTo:��Archive:Ĵ
-�         �        �        �        �        �      �     �        �         �
-�Tmr:�St:�Rt:�Stage�Radio:���Radio Message History:��������������������������Ĵ
-�    �   �   �     �        �                                                 �
-�Mission:�������Queue:�����Ĵ                                                 �
-�              �            �                                                 �
-�Building:�������������������������������������������������������������������Ĵ
-�              �                                                              �
-�����������������������������������������������������������������������������Ĵ
-�Is Down     �AnimAttached�Primary     �Player Owned�Initiated   �Reparing    �
-�To Damage   �Falling [  ]�Loaner      �Player Aware�Deploying   �To Rebuild  �
-�To Display  �Useless     �Locked      �AI Aware    �Firing      �To Sell     �
-�In Limbo    �Ticked Off  �Recoil      �Lemon       �Rotating    �Charging    �
-�Selected    �Cloakable   �Tethered    �Invul [    ]�Driving     �Charged     �
-�To Look     �Unloading   �Formation   �            �            �Captured    �
-����������������������������������������������������������������ĴJamming     �
-�                                                                �Jammed      �
-�                                                                �            �
-�                                                                �            �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂCoord:ÄÄÂHgt:ÂStr:ÂAce:ÂSpd:ÂAmmoÂArm:ÂGrp:ÂCloak:ÂPrice:Äż
+ł                  ł        ł    ł    ł    ł    ł    ł    ł    ł      ł       ł
+ĂOwner:ÄÄÄÄÄÄÄÄÄÄÄÄĹTrigger:ĹTarCom:ÄÂSTarCom:ÂPFace:ĹPath:ÄÄÄÄÁÄÄÂTry:ÂDelay:´
+ł                  ł        ł        ł        ł      ł            ł    ł      ł
+ĂCargo:ÄÄÄÂTarget:ÄĹNext:ÄÄÄĹNavCom:ÄĹSNavCom:ĹSFace:ĹPBrk:ÂHeadTo:ÄÂArchive:Ä´
+ł         ł        ł        ł        ł        ł      ł     ł        ł         ł
+ĂTmr:ÂSt:ÂRt:ÂStageĹRadio:ÄÄĹRadio Message History:ÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ´
+ł    ł   ł   ł     ł        ł                                                 ł
+ĂMission:ÁÄÄÄÁÄÂQueue:ÄÄÄÄÄÄ´                                                 ł
+ł              ł            ł                                                 ł
+ĂBuilding:ÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł              ł                                                              ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÁÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Down     łAnimAttachedłPrimary     łPlayer OwnedłInitiated   łReparing    ł
+łTo Damage   łFalling [  ]łLoaner      łPlayer AwarełDeploying   łTo Rebuild  ł
+łTo Display  łUseless     łLocked      łAI Aware    łFiring      łTo Sell     ł
+łIn Limbo    łTicked Off  łRecoil      łLemon       łRotating    łCharging    ł
+łSelected    łCloakable   łTethered    łInvul [    ]łDriving     łCharged     ł
+łTo Look     łUnloading   łFormation   ł            ł            łCaptured    ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ´Jamming     ł
+ł                                                                łJammed      ł
+ł                                                                ł            ł
+ł                                                                ł            ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Building                                   F12 ->
 # TXT_DEBUG_BUILDING
- Game Objects�  Drawing   �System      �Map Display �            � Game Init  �
-�Find-Path:���Cell:��������Palette:�����Full Process��������������RULES.INI:�͵
-�            �            �            �            �            �            �
-�Target Scan:�Objects:������������������Sidebar:������������������SCENARIO.INI�
-�            �            �            �            �            �            �
-�AI:����������Anims:��������������������Radar:�������������������������������Ĵ
-�            �            �            �            �            �            �
-�Per-Cell-AI����������������������������Tactical:����������������������������Ĵ
-�            �            �            �            �            �            �
-�Eval Object:���������������������������Power Bar:���������������������������Ĵ
-�            �            �            �            �            �            �
-�Eval Cell:�����������������������������Shroud:������������������������������Ĵ
-�            �            �            �            �            �            �
-�Eval Wall:�����������������������������Tabs:��������������������������������Ĵ
-�            �            �            �            �            �            �
-�Mission:�������������������������������DirectX Blit�������������������������Ĵ
-�            �            �            �            �            �            �
-�����������������������������������������������������������������������������Ĵ
-�            �            �            �            �            �            �
-�����������������������������������������������������������������������������Ĵ
-�            �            �            �            �            �            �
-�����������������������������������������������������������������������������Ĵ
-�            �            �            �            �            �            �
-�������������������������������������������������������������������������������
+ Game Objectsł  Drawing   łSystem      łMap Display ł            ł Game Init  ł
+ŐFind-Path:ÍÍŘCell:ÍÍÍÍÍÍÍŘPalette:ÍÍÍÍŘFull ProcessŘÍÍÍÍÍÍÍÍÍÍÍÍŘRULES.INI:ÍÍľ
+ł            ł            ł            ł            ł            ł            ł
+ĂTarget Scan:ĹObjects:ÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹSidebar:ÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹSCENARIO.INI´
+ł            ł            ł            ł            ł            ł            ł
+ĂAI:ÄÄÄÄÄÄÄÄÄĹAnims:ÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹRadar:ÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂPer-Cell-AIÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹTactical:ÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂEval Object:ĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹPower Bar:ÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂEval Cell:ÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹShroud:ÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂEval Wall:ÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹTabs:ÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂMission:ÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹDirectX BlitĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł            ł            ł            ł            ł            ł            ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Performance Benchmarks                     F12 ->
 # TXT_DEBUG_PERFORMANCE
-�Full Name:���������Coord:���Hgt:�Str:�Ace:�Spd:�Ammo�Arm:�Grp:�Cloak:�Price:Ŀ
-�                  �        �    �    �    �    �    �    �    �      �       �
-�Owner:�������������Trigger:�TarCom:��STarCom:�PFace:�Path:��������Try:�Delay:�
-�                  �        �        �        �      �            �    �      �
-�Cargo:����Target:��Next:����NavCom:��SNavCom:�SFace:�PBrk:�HeadTo:��Archive:Ĵ
-�         �        �        �        �        �      �     �        �         �
-�Tmr:�St:�Rt:�Stage�Radio:���Radio Message History:��������������������������Ĵ
-�    �   �   �     �        �                                                 �
-�Mission:�������Queue:�����Ĵ                                                 �
-�              �            �                                                 �
-�Attk:�����������������������������������������������������������������������Ĵ
-�     �                                                                       �
-�����������������������������������������������������������������������������Ĵ
-�Is Down     �AnimAttached�Primary     �Player Owned�Initiated   �            �
-�To Damage   �Falling [  ]�Loaner      �Player Aware�Deploying   �            �
-�To Display  �Useless     �Locked      �AI aware    �Firing      �            �
-�In Limbo    �Ticked Off  �Recoil      �Lemon       �Rotating    �            �
-�Selected    �Cloakable   �Tethered    �Invul [    ]�Driving     �            �
-�To Look     �Unloading   �Formation   �            �            �            �
-�Team:����Mmbrs:�Qnt:�Center:��Target:��Formation:���������������������������͵
-�        �      �    �        �        �            �Understrngth�Moving      �
-�Mission:������������������������������������������ĴFullStrength�ForcedActive�
-�                             �                     �HasBeen     �Reforming   �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂCoord:ÄÄÂHgt:ÂStr:ÂAce:ÂSpd:ÂAmmoÂArm:ÂGrp:ÂCloak:ÂPrice:Äż
+ł                  ł        ł    ł    ł    ł    ł    ł    ł    ł      ł       ł
+ĂOwner:ÄÄÄÄÄÄÄÄÄÄÄÄĹTrigger:ĹTarCom:ÄÂSTarCom:ÂPFace:ĹPath:ÄÄÄÄÁÄÄÂTry:ÂDelay:´
+ł                  ł        ł        ł        ł      ł            ł    ł      ł
+ĂCargo:ÄÄÄÂTarget:ÄĹNext:ÄÄÄĹNavCom:ÄĹSNavCom:ĹSFace:ĹPBrk:ÂHeadTo:ÄÂArchive:Ä´
+ł         ł        ł        ł        ł        ł      ł     ł        ł         ł
+ĂTmr:ÂSt:ÂRt:ÂStageĹRadio:ÄÄĹRadio Message History:ÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ´
+ł    ł   ł   ł     ł        ł                                                 ł
+ĂMission:ÁÄÄÄÁÄÂQueue:ÄÄÄÄÄÄ´                                                 ł
+ł              ł            ł                                                 ł
+ĂAttk:ÂÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł     ł                                                                       ł
+ĂÄÄÄÄÄÁÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Down     łAnimAttachedłPrimary     łPlayer OwnedłInitiated   ł            ł
+łTo Damage   łFalling [  ]łLoaner      łPlayer AwarełDeploying   ł            ł
+łTo Display  łUseless     łLocked      łAI aware    łFiring      ł            ł
+łIn Limbo    łTicked Off  łRecoil      łLemon       łRotating    ł            ł
+łSelected    łCloakable   łTethered    łInvul [    ]łDriving     ł            ł
+łTo Look     łUnloading   łFormation   ł            ł            ł            ł
+ĆTeam:ÍÍÍŃMmbrs:ŃQnt:ŃCenter:ÍŃTarget:ÍŘFormation:ÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍŘÍÍÍÍÍÍÍÍÍÍÍÍľ
+ł        ł      ł    ł        ł        ł            łUnderstrngthłMoving      ł
+ĂMission:ÁÄÄÄÄÄÄÁÄÄÄÄÁÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ´FullStrengthłForcedActiveł
+ł                             ł                     łHasBeen     łReforming   ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                        Aircraft                                   F12 ->
 # TXT_DEBUG_AIRCRAFT
-�Full Name:���������Act Like:���������Tech:�Diff:�State:�Block:�IQ:���Repair:Ŀ
-�                  �                 �     �     �      �      �     �        �
-�AScan:���Air:�����Q-Air���Credits:�Power:��R-Spy:�Score:����Team:����Alert:�Ĵ
-�        �        �       �        �       �      �         �        �        �
-�BScan:���Building�Q-Bld���Ore:�����Drain:��P-Targ:����������Trigger:�Borrow:Ĵ
-�        �        �       �        �       �                �        �        �
-�UScan:���Unit:����Q-Unit��ICreds:��U-Lost:�Allies:�������������������Attack:Ĵ
-�        �        �       �        �       �        �                �        �
-�IScan:���Infantry�Q-Inf���Capacity�B-Lost:�Radius:Ĵ                �AI-Time:�
-�        �        �       �        �       �        �                �        �
-�VScan:���Vessel:��Q-Ship��North:��������������������Center Cell:�����Damage:Ĵ
-�        �        �       �                         �                �        �
-�West:���������������������Core:���������������������East:�������������������Ĵ
-�                         �                         �                         �
-�Globals:������������������South:��������������������Enemy:������������������Ĵ
-�                         �                         �                         �
-�����������������������������������������������������������������������������Ĵ
-�Is Active   �Defeated    �Visionary   �Resigned    �            �            �
-�Is Human    �To Die      �Low Ore     �Gave Up     �            �            �
-�Player Ctrl �To Win      �Spied       �Built Smthng�            �            �
-�Autocreate  �To Lose     �Thieved     �Auto Base AI�            �            �
-�Discovered  �Civ. Evac   �GPS Active  �            �            �            �
-�Max Capacity�Recalc Flag �Production  �            �            �            �
-�������������������������������������������������������������������������������
+ÚFull Name:ÄÄÄÄÄÄÄÄÂAct Like:ÄÄÄÄÄÄÄÄÂTech:ÂDiff:ÂState:ÂBlock:ÂIQ:ÄÄÂRepair:Äż
+ł                  ł                 ł     ł     ł      ł      ł     ł        ł
+ĂAScan:ÄÄÂAir:ÄÄÄÄÂQ-AirÄÄÂCredits:ÂPower:ÄĹR-Spy:ÂScore:ÄÄÄÂTeam:ÄÄÄĹAlert:ÄÄ´
+ł        ł        ł       ł        ł       ł      ł         ł        ł        ł
+ĂBScan:ÄÄĹBuildingĹQ-BldÄÄĹOre:ÄÄÄÄĹDrain:ÄĹP-Targ:ÄÄÄÄÄÄÄÄÄĹTrigger:ĹBorrow:Ä´
+ł        ł        ł       ł        ł       ł                ł        ł        ł
+ĂUScan:ÄÄĹUnit:ÄÄÄĹQ-UnitÄĹICreds:ÄĹU-Lost:ĹAllies:ÄÂÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄĹAttack:Ä´
+ł        ł        ł       ł        ł       ł        ł                ł        ł
+ĂIScan:ÄÄĹInfantryĹQ-InfÄÄĹCapacityĹB-Lost:ĹRadius:Ä´                ĂAI-Time:´
+ł        ł        ł       ł        ł       ł        ł                ł        ł
+ĂVScan:ÄÄĹVessel:ÄĹQ-ShipÄĹNorth:ÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄĹCenter Cell:ÄÄÄÄĹDamage:Ä´
+ł        ł        ł       ł                         ł                ł        ł
+ĂWest:ÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄĹCore:ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄĹEast:ÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄ´
+ł                         ł                         ł                         ł
+ĂGlobals:ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄĹSouth:ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄĹEnemy:ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ł                         ł                         ł                         ł
+ĂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄĹÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ´
+łIs Active   łDefeated    łVisionary   łResigned    ł            ł            ł
+łIs Human    łTo Die      łLow Ore     łGave Up     ł            ł            ł
+łPlayer Ctrl łTo Win      łSpied       łBuilt Smthngł            ł            ł
+łAutocreate  łTo Lose     łThieved     łAuto Base AIł            ł            ł
+łDiscovered  łCiv. Evac   łGPS Active  ł            ł            ł            ł
+łMax CapacityłRecalc Flag łProduction  ł            ł            ł            ł
+ŔÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄŮ
 <- F11                           House                                   F12 ->
 # TXT_DEBUG_HOUSE
 *******************************\r** Pentium CPU not detected. **\r*******************************

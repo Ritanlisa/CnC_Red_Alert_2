@@ -42,6 +42,7 @@
 #include "shapebtn.h"
 #include "slider.h"
 
+extern GraphicViewPortClass SeenBuff;
 
 /***************************************************************************
  * ListClass -- Like a Windows ListBox structure									*

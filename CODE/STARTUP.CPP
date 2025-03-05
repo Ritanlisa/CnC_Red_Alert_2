@@ -37,6 +37,11 @@
  *   main -- Initial startup routine (preps library systems).                                  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+// Auto Defineds
+# define WIN32
+# define ENGLISH 1
+// end
+
 #include	"function.h"
 #include	<conio.h>
 #include	<io.h>
@@ -297,8 +302,8 @@ int main(int argc, char * argv[])
 	RegCloseKey( hKey );
 
 	//	I've been having problems getting the patch to delete "conquer.eng", which is present in the game
-	//	directory for 1.08, but which must NOT be present for this version (Aftermath mix files provide the
-	//	string overrides that the 1.08 separate conquer.eng did before Aftermath).
+	//	directory for 1.08, but which must NOT be present for this version (Yuri mix files provide the
+	//	string overrides that the 1.08 separate conquer.eng did before Yuri).
 	//	Delete conquer.eng if it's found.
 	if( FindFirstFile( "conquer.eng", &wfd ) != INVALID_HANDLE_VALUE )
 		DeleteFile( "conquer.eng" );

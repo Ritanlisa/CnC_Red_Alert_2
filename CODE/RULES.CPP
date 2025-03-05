@@ -385,7 +385,7 @@ bool RulesClass::General(CCINIClass & ini)
 {
 	static char const * const GENERAL = "General";
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-	static char const * const AFTERMATH = "Aftermath";
+	static char const * const AFTERMATH = "Yuri";
 
 	if(ini.Is_Present(AFTERMATH)) {
 //debugprint( "NewUnitsEnabled previously %i\n", NewUnitsEnabled );

@@ -278,11 +278,11 @@ bool Init_Game(int , char * [])
 		Rule.Process(RuleINI);
 	}
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-	//  Aftermath runtime change 9/29/98
-	//	This is safe to do, as only rules for aftermath units are included in this ini.
-	if (Is_Aftermath_Installed() == true) {
-		if (AftermathINI.Load(CCFileClass("AFTRMATH.INI"), false)) {
-			Rule.Process(AftermathINI);
+	//  Yuri runtime change 9/29/98
+	//	This is safe to do, as only rules for yuri units are included in this ini.
+	if (Is_Yuri_Installed() == true) {
+		if (YuriINI.Load(CCFileClass("RULESMD.INI"), false)) {
+			Rule.Process(YuriINI);
 		}
 	}
 #endif
@@ -722,7 +722,7 @@ bool Select_Game(bool fade)
 					if (cs) {
 						cdcheck = 2;
 					}
-					if (Is_Aftermath_Installed()) {
+					if (Is_Yuri_Installed()) {
 						if (!cdcheck) {
 							cdcheck = 3;
 						} else {
@@ -960,8 +960,8 @@ bool Select_Game(bool fade)
 							{
 								//	Ever hits? Session.Type set to GAME_SKIRMISH without user selecting in Select_MPlayer_Game()?
 #ifdef FIXIT_VERSION_3
-								//	If mission is Counterstrike, CS CD will be required. But aftermath units require AM CD.
-								bAftermathMultiplayer = Is_Aftermath_Installed() && !Is_Mission_Counterstrike( Scen.ScenarioName );
+								//	If mission is Counterstrike, CS CD will be required. But yuri units require AM CD.
+								bYuriMultiplayer = Is_Yuri_Installed() && !Is_Mission_Counterstrike( Scen.ScenarioName );
 								//	ajw I'll bet this was needed before also...
 								Session.ScenarioIsOfficial = Session.Scenarios[Session.Options.ScenarioIndex]->Get_Official();
 #endif
@@ -1425,7 +1425,7 @@ bool Select_Game(bool fade)
 		case GAME_NULL_MODEM:
 		case GAME_IPX:
 #ifdef FIXIT_VERSION_3
-			if( !bAftermathMultiplayer ) {
+			if( !bYuriMultiplayer ) {
 #else
 			if (PlayingAgainstVersion < VERSION_AFTERMATH_CS) {
 #endif
@@ -1441,8 +1441,8 @@ bool Select_Game(bool fade)
 //				debugprint( "pWolapi is null on internet game!" );
 				Fatal( "pWolapi is null on internet game!" );
 			}
-			//if( pWolapi->bEnableNewAftermathUnits )
-			if( bAftermathMultiplayer )
+			//if( pWolapi->bEnableNewYuriUnits )
+			if( bYuriMultiplayer )
 				NewUnitsEnabled = true;
 			else
 				NewUnitsEnabled = SecretUnitsEnabled = false;
@@ -2978,7 +2978,7 @@ static void Init_Bootstrap_Mixfiles(void)
 	}
 #endif
 
-	new MFCD("REDALERT.MIX", &FastKey);
+	new MFCD("RA2.MIX", &FastKey);
 
 	/*
 	**	Bootstrap enough of the system so that the error dialog box can successfully

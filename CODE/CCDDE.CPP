@@ -72,7 +72,7 @@ BOOL RA95AlreadyRunning = FALSE;		//Was there an instance of Red Alert 95 alread
 extern HWND 			MainWindow;
 extern TimerClass	GameTimer;
 extern BOOL			GameTimerInUse;
-extern void 			WWDebugString (char *string);
+extern void 			WWDebugString (const char *string);
 
 
 /***********************************************************************************************
@@ -117,7 +117,7 @@ DDEServerClass::DDEServerClass(void)
 	MPlayerGameInfo = NULL;		//Flag that we havnt received a start game info packet yet
 
 	//DDE_Class = new Instance_Class ("CONQUER", "WCHAT");
-	DDE_Class = new Instance_Class ("REDALERT", "WCHAT");
+	DDE_Class = new Instance_Class ("RA2", "WCHAT");
 
 	DDE_Class->Enable_Callback( TRUE );
 	IsEnabled = TRUE;

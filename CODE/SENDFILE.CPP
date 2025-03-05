@@ -64,7 +64,7 @@ bool Send_Remote_File ( char *file_name, int gametype );
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
 extern bool Is_Mission_Counterstrike (char *file_name);
-extern bool Is_Mission_Aftermath (char *file_name);
+extern bool Is_Mission_Yuri (char *file_name);
 #endif
 
 #define RESPONSE_TIMEOUT	60*60
@@ -641,13 +641,13 @@ bool Send_Remote_File ( char *file_name, int gametype )
 		strcpy (&file_info.ScenarioInfo.ShortFileName[0], file_name);
 #ifdef FIXIT_VERSION_3
 		//	If we're sending an official map, always send it to 'download.tmp'.
-		if( Is_Mission_Counterstrike( file_name ) || Is_Mission_Aftermath( file_name ) ) {
+		if( Is_Mission_Counterstrike( file_name ) || Is_Mission_Yuri( file_name ) ) {
 			strcpy (&file_info.ScenarioInfo.ShortFileName[0], "DOWNLOAD.TMP");
 		}
 #else
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-// If we're sending an Aftermath map, always send it to 'download.tmp'.
-		if (Is_Mission_Aftermath(file_name)) {
+// If we're sending an Yuri map, always send it to 'download.tmp'.
+		if (Is_Mission_Yuri(file_name)) {
 			strcpy (&file_info.ScenarioInfo.ShortFileName[0], "DOWNLOAD.TMP");
 		}
 #endif
@@ -663,16 +663,16 @@ bool Send_Remote_File ( char *file_name, int gametype )
 //		debugprint( "Uploading '%s'\n", file_name );
 #ifdef FIXIT_VERSION_3
 		//	If we're sending an official map, always send it to 'download.tmp'.
-		if( Is_Mission_Counterstrike( file_name ) || Is_Mission_Aftermath( file_name ) ) {
+		if( Is_Mission_Counterstrike( file_name ) || Is_Mission_Yuri( file_name ) ) {
 			strcpy (&net_file_info.ScenarioInfo.ShortFileName[0], "DOWNLOAD.TMP");
 		}
 #else
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
-// If we're sending an Aftermath map, always send it to 'download.tmp'.
-		if (Is_Mission_Aftermath(file_name)) {
+// If we're sending an Yuri map, always send it to 'download.tmp'.
+		if (Is_Mission_Yuri(file_name)) {
 			strcpy (&file_info.ScenarioInfo.ShortFileName[0], "DOWNLOAD.TMP");
-			//	There was a bug here: s/b net_file_info. This means that players that don't have Aftermath could have been 
-			//	accumulating Aftermath maps all this time!!! (File wasn't getting renamed to "DOWNLOAD.TMP".)
+			//	There was a bug here: s/b net_file_info. This means that players that don't have Yuri could have been 
+			//	accumulating Yuri maps all this time!!! (File wasn't getting renamed to "DOWNLOAD.TMP".)
 		}
 #endif
 #endif
